@@ -14,7 +14,6 @@ const IndexPage = () => (
     <div>
       <Content />
     </div>
-    
   </Layout>
 )
 

@@ -6,7 +6,7 @@ const Hero = () => {
   return ( 
     <div style={{display: 'grid'}}>
       <StaticImage
-        src="../images/heroImg.jpg"
+        src="../../images/heroImg.jpg"
         layout='fullWidth'
         placeholder='blurred'
         formats={["AUTO", "WEBP", "AVIF"]}

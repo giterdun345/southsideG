@@ -12,10 +12,10 @@ const FooterContact = () => {
           <h4 className={ftSty.aboutListTitle}>Contact Us</h4>
         </li>
         <li>
-          <Link to='/contact' className={`${ftSty.genericAnchor}, ${ftSty.footerListAnchor}`} itemprop="significantLink">southsidePaintMore@gmail.com</Link>
+          <a href="mailto: Sspaintnmore@outlook.com" target="_top" className={`${ftSty.genericAnchor}, ${ftSty.footerListAnchor}`} itemprop="significantLink">Sspaintnmore@outlook.com</a>
         </li>
         <li>
-          <Link to='/contact' className={`${ftSty.genericAnchor}, ${ftSty.footerListAnchor}`} itemprop="significantLink">904-555-9828</Link>
+          <a href="tel:904-524-8784" className={`${ftSty.genericAnchor}, ${ftSty.footerListAnchor}`} itemprop="significantLink">904-524-8784 </a>
         </li>
         {/* <li>
           <Link to='/contact' className={`${ftSty.genericAnchor}, ${ftSty.footerListAnchor}`} itemprop="significantLink">GALLERY OF WORK</Link>

@@ -21,7 +21,9 @@ import { FaCopyright } from 'react-icons/fa';
         <span className={ftSty.logoBottomRights}> - All Rights Reserved - </span>
       </section>
       <div className={ftSty.logoBottomWrapper}>
-        <Link to="/terms-of-use" className={ftSty.genericAnchor} rel="nofollow">Terms</Link> | <Link to="/privacy-policy" className={ftSty.genericAnchor} rel="nofollow">Privacy</Link>
+        <Link to="/termsofuse" className={ftSty.genericAnchor} rel="nofollow">Terms</Link>
+         | 
+        <Link to="/privacypolicy" className={ftSty.genericAnchor} rel="nofollow">Privacy</Link>
       </div>
     </section>
   </div>
