@@ -1,29 +1,55 @@
 {
-  "name": "gatsby-starter-default",
+  "name": "Southside-Paint-Plus-More",
   "private": true,
-  "description": "A simple starter to get up and developing quickly with Gatsby",
   "version": "0.1.0",
-  "author": "Kyle Mathews <mathews.kyle@gmail.com>",
+  "description": "Offering Commercial and Residential painting services as well as an array of related jobs with competitive prices and satisfication guaranteed!",
+  "author": "John Ketterer <johnmketterer@gmail.com>",
   "dependencies": {
-    "gatsby": "^3.4.1",
-    "gatsby-plugin-gatsby-cloud": "^2.4.1",
-    "gatsby-plugin-image": "^1.4.0",
-    "gatsby-plugin-manifest": "^3.4.0",
-    "gatsby-plugin-offline": "^4.4.0",
-    "gatsby-plugin-react-helmet": "^4.4.0",
-    "gatsby-plugin-sharp": "^3.4.1",
-    "gatsby-source-filesystem": "^3.4.0",
-    "gatsby-transformer-sharp": "^3.4.0",
+    "gatsby": "^3.5.0",
+    "gatsby-plugin-gatsby-cloud": "^2.5.0",
+    "gatsby-plugin-image": "^1.5.0",
+    "gatsby-plugin-manifest": "^3.5.0",
+    "gatsby-plugin-offline": "^4.5.0",
+    "gatsby-plugin-react-helmet": "^4.5.0",
+    "gatsby-plugin-sass": "^4.5.0",
+    "gatsby-plugin-sharp": "^3.5.0",
+    "gatsby-source-filesystem": "^3.5.0",
+    "gatsby-transformer-sharp": "^3.5.0",
+    "hamburger-react": "^2.4.1",
+    "node-sass": "^6.0.0",
+    "normalize.css": "^8.0.1",
     "prop-types": "^15.7.2",
-    "react": "^17.0.1",
-    "react-dom": "^17.0.1",
+    "react": "^17.0.2",
+    "react-dom": "^17.0.2",
     "react-helmet": "^6.1.0"
   },
   "devDependencies": {
     "prettier": "2.2.1"
   },
   "keywords": [
-    "gatsby"
+    "residential painting",
+    "commercial painting",
+    "jacksonville",
+    "house painters near me",
+    "painting company",
+    "painting contractors",
+    "painting companies near me",
+    "best interior paint",
+    "sherwin williams exterior paint",
+    "painting contractors near me",
+    "commercial painting contractors",
+    "painting services near me",
+    "exterior house painters near me",
+    "interior house painters",
+    "local painting contractors",
+    "quality painting",
+    "interior house painters near me",
+    "best painters near me",
+    "house painters in my area",
+    "commercial painting contractors near me",
+    "professional exterior house painters near me",
+    "local painting companies",
+    "local painting contractors near me"
   ],
   "license": "0BSD",
   "scripts": {
@@ -37,7 +63,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/gatsbyjs/gatsby-starter-default"
+    "url": "https://github.com/giterdun345/southsidepaint"
   },
   "bugs": {
     "url": "https://github.com/gatsbyjs/gatsby/issues"

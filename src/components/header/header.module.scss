@@ -1,0 +1,119 @@
+//  FONT 
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@600&display=swap');
+$Open: 'Open Sans';
+// HEX COLOR 
+$blue: #61B7E8;
+$dark: #4C5B61;
+$lav: #E3D3E4;
+$neonGreen: #33ff00;
+
+.header-container{
+  position: relative;
+  font-size: 62.5%;
+  border-bottom: 1px solid $lav;
+  // margin: 0 5% 0 5%;
+}
+
+.navbar{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem 1.5rem;
+
+  li{
+    list-style: none;
+  }
+
+  a{
+    text-decoration: none;
+  }
+
+  a:hover{
+    color:$blue;
+  }
+}
+
+.hamburger {
+  display: none;
+}
+
+.navList {
+  display: flex;
+  height: 90px;
+  width: 100%;
+  justify-content: space-evenly;
+  align-items: flex-end;
+  margin-right: 5px;
+  
+}
+
+.navLink{
+  font-family: $Open;
+  font-size: 2.5vw;
+  font-weight: 400;
+  color: $dark;
+  text-transform: uppercase;
+}
+
+.navLink:hover{
+  color: $blue;
+}
+
+@media only screen and (max-width: 768px) {
+  .navList {
+      position: fixed;
+      left: -160%;
+  }
+  
+  .hamburger {
+    display: block;
+  }
+}
+
+/* =============================== SIDEBAR MENU ========================= */
+
+.wrapper {
+	height: 100%;
+  width: 100%;
+  position: fixed;
+  overflow-y: hidden;
+  background-color: rgba(0,0,0,0.8);
+}
+
+.card{
+  background-color: white;
+  font-family: $Open;
+  text-align: center;
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+  overflow: auto;
+   
+  hr{
+     width: 50%;
+     border: 2px solid $neonGreen;
+     border-radius: 5px;
+    }
+
+  a{
+    font-size: 8vw;
+    text-decoration: none;
+  }
+
+  li{
+    margin-top: 2rem;
+  }
+
+  li:last-child{
+    margin-bottom: 2rem;
+  }
+}
+
+// .inactive {
+//   left: -550px;
+// }
+
+// .active{
+//   left: 0;
+// }
+

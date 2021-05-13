@@ -1,7 +1,9 @@
-/**
- * Implement Gatsby's Browser APIs in this file.
- *
- * See: https://www.gatsbyjs.com/docs/browser-apis/
- */
+// import React from 'react'
+// import Layout from './src/components/layout/layout'
 
-// You can delete this file if you're not using it
+
+// export const wrapPageElement = ({ element, props }) => {
+//   // props provide same data to header as Page element will get
+//   // including location, data, etc - you don't need to pass it
+//   return <Layout {...props}>{element}</Layout>
+// }
