@@ -5,6 +5,7 @@ $Open: 'Open Sans';
 $blue: #61B7E8;
 $dark: #4C5B61;
 $lav: #E3D3E4;
+$red: #E3170A;
 $neonGreen: #33ff00;
 
 .header-container{
@@ -78,6 +79,7 @@ $neonGreen: #33ff00;
   position: fixed;
   overflow-y: hidden;
   background-color: rgba(0,0,0,0.8);
+  z-index: 5
 }
 
 .card{
@@ -88,10 +90,11 @@ $neonGreen: #33ff00;
   padding: 0;
   list-style-type: none;
   overflow: auto;
-   
+  z-index: 6;
+//  needs to stop scrolling when hero is there  
   hr{
      width: 50%;
-     border: 2px solid $neonGreen;
+     border: 2px solid $red;
      border-radius: 5px;
     }
 

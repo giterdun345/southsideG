@@ -1,0 +1,42 @@
+@import url('https://fonts.googleapis.com/css2?family=Gelasio:wght@400;500&display=swap');
+$Gelasio: "Gelasio";
+@import url('https://fonts.googleapis.com/css2?family=Lato&display=swap');
+$Lato: "Lato";
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@600&display=swap');
+$Open: 'Open Sans';
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Condensed:ital,wght@0,400;0,700;1,300&display=swap');
+// 300 400 700 
+$RobotoCond: "Roboto Condensed";
+@import url('https://fonts.googleapis.com/css2?family=Squada+One&display=swap');
+$SquadaOne: 'Squada One';
+
+// HEX COLOR 
+$blue: #61B7E8;
+$dark: #4C5B61;
+$lav: #E3D3E4;
+$red: #E3170A;
+$orange: #FD5200;
+$laural: #ADB993;
+$green: #949D6A;
+$light: #E4E6C3;
+$gray: #DFEFCA;
+$pink: #D36582;
+
+
+.heroOverlay{
+  grid-area: 1 / 1;
+  position: relative;
+  place-items: center;
+  display: grid;
+}
+
+
+.contentContainer{
+
+}
+
+.contentHeader{
+  font-family: $SquadaOne;
+  text-align: center;
+
+}

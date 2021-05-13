@@ -1,0 +1,266 @@
+@import url('https://fonts.googleapis.com/css2?family=Gelasio:wght@400;500&display=swap');
+$Gelasio: "Gelasio";
+@import url('https://fonts.googleapis.com/css2?family=Lato&display=swap');
+$Lato: "Lato";
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@600&display=swap');
+$Open: 'Open Sans';
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Condensed:ital,wght@0,400;0,700;1,300&display=swap');
+// 300 400 700 
+$RobotoCond: "Roboto Condensed";
+@import url('https://fonts.googleapis.com/css2?family=Squada+One&display=swap');
+$SquadaOne: 'Squada One';
+
+@import url('https://fonts.googleapis.com/css2?family=Londrina+Shadow&display=swap');
+$Orbitron: "Londrina Shadow";
+
+@import url('https://fonts.googleapis.com/css2?family=Amatic+SC:wght@700&display=swap');
+$Amatic: "Amatic SC";
+// HEX COLOR 
+$blue: #61B7E8;
+$dark: #4C5B61;
+$lav: #E3D3E4;
+$red: #E3170A;
+$orange: #FD5200;
+$laural: #ADB993;
+$green: #949D6A;
+$light: #E4E6C3;
+$gray: #DFEFCA;
+$pink: #D36582;
+
+.genericAnchor {
+	color: $blue;
+	&:visited {
+		color: $orange
+	}
+	&:hover {
+		color: $red
+	}
+}
+ 
+.flexRow {
+  display: flex;
+  flex-flow: row nowrap;
+}
+
+footer {
+  font: 11px $Gelasio, sans-serif;
+  background: $dark;
+  width: 100%;
+  min-height: 200px;
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-evenly;
+  align-items: center;
+
+  ul {
+    margin: 0;
+    padding: 0;
+    list-style: none
+  }
+  
+  a {
+    text-decoration: none;
+    color: $blue;
+  }
+  
+
+}
+
+// ==============================LOGO COMPONENT
+.logoBottomSection {
+  width: 100%;
+  padding-top: 10px;
+  border-top: 1px solid $light;
+  margin-top: 10px;
+}
+
+.logoBottomWrapper {
+  font-size: 1.5em;
+  color: #fff
+}
+
+.logoAddress {
+  display: inline;
+  font-style: normal
+}
+
+.logoPosition{
+  margin-top: 20px;
+  text-align: center;
+}
+
+// ======================ABOUT/ CONTACT COMPONENT 
+.aboutListTop {
+  text-align: center;
+  margin-top: 20px;
+
+  li {
+    text-align: center;
+    padding-bottom: 10px;
+  }
+}
+ 
+.aboutListTitle {
+  padding: 10px 0 0px 0;
+  margin: 0 auto;
+  color: $light;
+  font: 3em $Gelasio;
+  border-bottom: 3px ridge $laural;
+}
+
+.footerListAnchor {
+  font: 1.5em "Open Sans", sans-serif;
+  color: $lav;
+}
+
+// =========================== CONNECT COMPONENT 
+.socialSection {
+  // background-color: black;
+  width: 100%;
+  min-height: 50px;
+  margin-top: 30px;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+}
+
+// line through 
+.socialSection::after {
+  content: "";
+  position: absolute;
+  z-index: 1;
+  top: 50%;
+  left: 10px;
+  border-top: 1px solid $light;
+  width: calc(100% - 20px)
+}
+
+.socialOverlap {
+  position: relative;
+  z-index: 5;
+  background-color: $dark;
+  font: 3em $Orbitron, sans-serif;
+  color: #fff;
+  margin: 0 10px;
+}
+
+.connectContainer{
+  display: flex;
+  flex-flow: column nowrap;
+  width: 100%;
+}
+
+.socialSmall {
+  margin:  0 20px;
+  background-color: $dark;
+  font: 2em $Amatic;
+  color: $orange;
+  z-index: 5;
+}
+
+.socialIconWrapper{
+  display: flex;
+  justify-content: space-evenly;
+  padding-bottom: 20px;
+}
+@media only screen and (max-width: 768px) {
+  // .footerListAnchor {
+  //   font-size: 1.1em
+  // }
+
+  // .footerSocialConnect {
+  //   font-size: 2.5em
+  // }
+
+  // .footerSocialOverlap > a {
+  //   font-size: 2.24em
+  // }
+
+  // .footerBottomWrapper {
+  //   font-size: 1.3em
+  // }
+}
+
+
+@media only screen and (max-width: 568px) {
+  // .footerListTop {
+  //   width: 100%
+  // }
+
+  // .footerListTitle {
+  //   font-size: 3vw;
+  // }
+
+  // .footerListAnchor {
+  //   font-size: 1.5em
+  // }
+
+  // .footerSocialSection::after {
+  //   top: 25%
+  // }
+
+  // .footerSocialConnect {
+  //   margin-bottom: 10px;
+  //   padding: 0 10px
+  // }
+
+  // .footerSocialOverlap {
+  //   display: flex;
+  //   justify-content: center;
+  // }
+
+  // .footerSocialIconsWrapper {
+  //   width: 100%;
+  //   padding: 0
+  // }
+
+  // .footerSocialOverlap > a:not(:first-child) {
+  //   margin-left: 20px;
+  // }
+
+  // .footerBottomSection {
+  //   padding: 0 5px 10px 5px
+  // }
+
+  // .footerBottomWrapper {
+  //   text-align: center;
+  //   width: 100%;
+  //   margin-top: 10px
+  // }
+}
+
+
+
+@media only screen and (max-width: 480px) {
+  // .footerSocialOverlap > a {
+  //   margin: auto
+  // }
+
+  // .footerSocialOverlap > a:not(:first-child) {
+  //   margin-left: 0;
+  // }
+
+  // .logoBottomRights {
+  //   display: block
+  // }
+}
+
+@media only screen and (max-width: 320px) {
+  // .footerListTitle {
+  //   font-size: 2.2em
+  // }
+  // .footerListAnchor {
+  //   font-size: 1.2em
+  // }
+  // .footerSocialConnect {
+  //   font-size: 2.4em
+  // }
+  // .footerSocialOverlap > a {
+  //   font-size: 2.24em
+  // }
+  // .footerBottomWrapper {
+  //   font-size: 1.3em
+  // }
+}
+
+// thanks to https://codemyui.com/pure-css-responsive-footer-design/

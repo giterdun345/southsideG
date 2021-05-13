@@ -1,26 +1,20 @@
 import * as React from "react"
 // import { Link } from "gatsby"
-// import { StaticImage } from "gatsby-plugin-image"
 
 import Layout from "../components/layout/layout"
 import Seo from "../components/layout/seo"
+// components
+import Hero from '../components/landing/hero'
+import Content from '../components/landing/content'
 
 const IndexPage = () => (
   <Layout>
     <Seo title="Home" />
-    <h1>Main Landing Page COntent</h1>
-    <p>Welcome to your new site.</p>
-    {/* <StaticImage
-      src="../images/gatsby-astronaut.png"
-      width={300}
-      quality={95}
-      formats={["AUTO", "WEBP", "AVIF"]}
-      alt="A Gatsby astronaut"
-      style={{ marginBottom: `1.45rem` }}
-    /> */}
-    {/* <p>
-      <Link to="/page-2/">Go to page 2</Link> <br />
-    </p> */}
+    <Hero />  
+    <div>
+      <Content />
+    </div>
+    
   </Layout>
 )
 
