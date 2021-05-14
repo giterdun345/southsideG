@@ -251,4 +251,55 @@
           //   //     grid-area: 1 / 1;
           //   //   }
           // }
+
+
+
+
+
+
+          
+          // export const query = graphql`{
+          //   interior: file(relativePath: {eq: "interiorpChurch.jpg"}){
+          //     childImageSharp {
+          //       fluid(maxWidth: 600){
+          //         ...GatsbyImageSharpFluid
+          //       }
+          //     }
+          //   }
+          //   exterior: file(relativePath: {eq: "exteriorp.jpg"}){
+          //     childImageSharp {
+          //       fluid(maxWidth: 600){
+          //         ...GatsbyImageSharpFluid
+          //       }
+          //     }
+          //   }
+          //   pressurewash: file(relativePath: {eq: "pressurewashing.jpg"}){
+          //     childImageSharp {
+          //       fluid(maxWidth: 600){
+          //         ...GatsbyImageSharpFluid
+          //       }
+          //     }
+          //   } 
+          //   wallpaper: file(relativePath: {eq: "wallpaper.jpg"}){
+          //     childImageSharp {
+          //       fluid(maxWidth: 600){
+          //         ...GatsbyImageSharpFluid
+          //       }
+          //     }
+          //   } 
+          //   carpentry: file(relativePath: {eq: "carpentry.jpg"}){
+          //     childImageSharp {
+          //       fluid(maxWidth: 600){
+          //         ...GatsbyImageSharpFluid
+          //       }
+          //     }
+          //   } 
+          //   colors: file(relativePath: {eq: "colors.png"}){
+          //     childImageSharp {
+          //       fluid(maxWidth: 600){
+          //         ...GatsbyImageSharpFluid
+          //       }
+          //     }
+          //   }
+          // }`
           

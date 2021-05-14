@@ -1,7 +1,6 @@
 import React from 'react'
 import { Link } from "gatsby"
 import * as hdSty from  './header.module.scss'
-import Navlinks from './navlinks'
 
 const sideDrawer = ({open}) => {
 
@@ -21,12 +20,10 @@ const sideDrawer = ({open}) => {
           <Link to='/careers' className={hdSty.navLink}>Careers</Link>
           <hr />
         </li>
-        
         <li>
           <Link to='/contact' className={hdSty.navLink}>Contact</Link>
           <hr /> 
         </li>
-         
       </ul>
     </nav>
    );

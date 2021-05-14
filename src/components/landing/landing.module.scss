@@ -120,12 +120,10 @@ $pink: #D36582;
 
 
 
-//  ==================================== CONTENT OF LANDING PAGE
-.contentContainer{
- 
-}
+//  ======================================================== CONTENT OF LANDING PAGE
 
-.workmanshipTxt{
+// ======================================== CONTENT GENERAL 
+.contentTxt{
   text-align: center;
   margin: 7rem 0 7rem 0;
 
@@ -195,27 +193,74 @@ $pink: #D36582;
   }
 }
 
-.wkTitle{
+.contentTitle{
   font: 4.5vw $Arsenal;
   margin: 0 1rem;
 }
 
 @media screen and (max-width: 768px){
-  .wkTitle{
+  .contentTitle{
     font-size: 3em;
   }
 }
 
 @media screen and (max-width: 585px){
-  .workmanshipTxt{
+  .contentTxt{
     button{
       width: 90%;
     }
   }
-  .wkTitle{
+  .contentTitle{
     font-size: 2em;
   }
   
+}
+
+// ==================================================== SOME SERVICES 
+.cardContainer{
+  display: flex;
+  flex: 0 0 33.333%;
+  flex-flow: row wrap;
+  justify-content: space-evenly;
+  align-content: center;
+  margin-top: 2rem;
+}
+
+.card{
+  height: 400px;
+  width: 400px;
+  font: 2em $Bebas;
+  letter-spacing: 2px;
+  border: 5px solid $lav;
+  color: rgb(22, 22, 22);
+  text-shadow: 2px 2px $light;
+  margin-top:2rem;
+  margin-bottom: 2rem;
+}
+
+.cardOverlay{
+  visibility: hidden;
+}
+
+@media screen and(min-width: 425px){
+  .cardOverlay{
+    position: inline-block;
+    visibility: visible;
+    height: 100%;
+    width: 100%;
+    opacity: 0;
+    transform: translateY(-90%);
+    background-color: $lav;
+    transition: opacity 0.3s;
+  
+    .cardTxt{
+      font-family:$Bentham;
+      font-size: 1.5rem;
+    }
+  } 
+  .card:hover .cardOverlay{
+        opacity: 1;
+  }
 }
 
 

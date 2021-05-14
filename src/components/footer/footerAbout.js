@@ -12,19 +12,19 @@ const FooterAbout = () => {
           <h4 className={ftSty.aboutListTitle}>About Us</h4>
         </li>
         <li>
-          <Link to='/services' className={`${ftSty.genericAnchor}, ${ftSty.footerListAnchor}`} itemprop="significantLink">WHAT WE HAVE TO OFFER</Link>
+          <Link to='/services' className={`${ftSty.genericAnchor}, ${ftSty.footerListAnchor}`}>WHAT WE HAVE TO OFFER</Link>
         </li>
         <li>
-          <Link to='/contact' className={`${ftSty.genericAnchor}, ${ftSty.footerListAnchor}`} itemprop="significantLink">FREE ESTIMATE</Link>
+          <Link to='/contact' className={`${ftSty.genericAnchor}, ${ftSty.footerListAnchor}`}>FREE ESTIMATE</Link>
         </li>
         <li>
-          <Link to='/gallery' className={`${ftSty.genericAnchor}, ${ftSty.footerListAnchor}`} itemprop="significantLink">GALLERY OF WORK</Link>
+          <Link to='/gallery' className={`${ftSty.genericAnchor}, ${ftSty.footerListAnchor}`}>GALLERY OF WORK</Link>
         </li>
         <li>
-          <Link to='/careers' className={`${ftSty.genericAnchor}, ${ftSty.footerListAnchor}`} itemprop="significantLink">JOB OPENINGS</Link>
+          <Link to='/careers' className={`${ftSty.genericAnchor}, ${ftSty.footerListAnchor}`}>JOB OPENINGS</Link>
         </li>
         <li>
-          <Link to='/contact' className={`${ftSty.genericAnchor}, ${ftSty.footerListAnchor}`} itemprop="significantLink">REACH OUT</Link>
+          <Link to='/contact' className={`${ftSty.genericAnchor}, ${ftSty.footerListAnchor}`}>REACH OUT</Link>
         </li>
       </ul>
     </div>

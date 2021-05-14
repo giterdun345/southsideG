@@ -13,12 +13,12 @@ import { FaCopyright } from 'react-icons/fa';
     <section className={`${ftSty.logoBottomSection}`}>
       <section className={ftSty.logoBottomWrapper}>   
         <FaCopyright /> 2021 SSP+M &nbsp;    
-        <address className={ftSty.logoAddress} role="company address">
+        <address className={ftSty.logoAddress}>
           2055 Derham Rd
           Jacksonville, Fl 32246
         </address>
         <br/>
-        <span className={ftSty.logoBottomRights}> - All Rights Reserved - </span>
+        <span> - All Rights Reserved - </span>
       </section>
       <div className={ftSty.logoBottomWrapper}>
         <Link to="/termsofuse" className={ftSty.genericAnchor} rel="nofollow">Terms</Link>

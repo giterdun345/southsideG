@@ -1,28 +1,14 @@
 import React from 'react'
 import * as ldSty from './landing.module.scss'
 import { StaticImage } from "gatsby-plugin-image"
-
-
+// COMPONENTS 
+import ContentAbout from './contentAbout'
+import ContentServices from './contentServices'
 const Content = () => {
   return ( 
-    <div className={ldSty.contentContainer}>
-      <div className={ldSty.workmanshipTxt}>
-        <h2 className={ldSty.wkTitle}>Superb Workmanship To Give Your Place a Fresh Start</h2>
-        <p> When someone arrives at your home or place of business, something as simple as the color and quality of the paint can make a significant impact on their first impression. With help from our team
-            here at Southside Paint + More, you can arrive at your property with a fresh feel, new look and a reflection of your personal style. We offer you pristine painting services as well as an array of 
-            related jobs with competitive prices and satisfication guaranteed. We take pride in our work and complete the job right the <span style={{color: '#FD5200'}}>first time</span>!
-            <button className={ldSty.btnOne}><span>Request A Free Consultation</span></button>
-        </p>
-      </div>
-      
-            
-
-
-
-      <div>
-        <h3>Veniam quis et ut Lorem quis. Sint proident deserunt cillum labore et in dolore veniam sint exercitation sunt. Do non enim aliquip quis officia officia magna voluptate cupidatat amet. Aliqua laborum ex nulla aute. Consequat aute qui proident fugiat duis ea commodo aliquip ipsum nisi enim dolor.</h3>
-        cards here of some services
-      </div>
+    <div >
+      <ContentAbout />
+      <ContentServices />
     
       <div>
         <h3>Here's what our customers had to say:</h3>
