@@ -12,8 +12,11 @@ const Footer = () => {
     <footer>
       <FooterLogo />
         {/* ABOUT  */}
-      <FooterAbout />
-      <FooterContact />
+        {/* <div style={{display:'flex',flexFlow:'row wrap', justifyContent:'start'}}> */}
+          <FooterAbout />
+          <FooterContact />
+        {/* </div> */}
+      
       <FooterConnect />
   </footer>
 )}

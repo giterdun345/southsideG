@@ -1,18 +1,12 @@
 import React from 'react'
 import * as ldSty from './landing.module.scss'
+import { StaticImage } from "gatsby-plugin-image"
 
 
 const Content = () => {
   return ( 
     <div className={ldSty.contentContainer}>
-      <div className={ldSty.contentHeader}>
-        <p>Welcome to</p>
-        <h2>Southside</h2>
-        <h2>Paint + More</h2>
-        <hr></hr>
-        <p>Nisi irure proident cupidatat est cupidatat pariatur Lorem deserunt cillum. Quis laboris do ipsum laboris do exercitation qui in. Deserunt irure magna ad aliquip tempor. In fugiat ut ullamco ullamco. Est elit do laborum reprehenderit veniam id cillum consectetur labore. Ad voluptate enim eiusmod incididunt anim. Amet mollit eiusmod nisi occaecat.</p>
-      </div>
-     
+      
       <div>
         <h3>Veniam quis et ut Lorem quis. Sint proident deserunt cillum labore et in dolore veniam sint exercitation sunt. Do non enim aliquip quis officia officia magna voluptate cupidatat amet. Aliqua laborum ex nulla aute. Consequat aute qui proident fugiat duis ea commodo aliquip ipsum nisi enim dolor.</h3>
         cards here of some services
@@ -26,6 +20,26 @@ const Content = () => {
         <h3>Why choose us?</h3>
           icons or something to outline the reasons
       </div>
+      <div className={ldSty.contentHeader}>
+        <p>Welcome to</p>
+        <div className={ldSty.titleContainer}>
+              <h1 className={ldSty.heroTitle}>
+                Southside <span>Paint + More</span>
+              </h1>
+              <StaticImage
+              src="../../images/swoosh.png"
+              layout='fullWidth'
+              // width={200}
+              placeholder='blurred'
+              formats={["AUTO", "WEBP", "AVIF"]}
+              alt="paint swoosh"
+              style={{gridArea:'1/1'}}
+              />
+            </div>
+        <hr></hr>
+        <p>Nisi irure proident cupidatat est cupidatat pariatur Lorem deserunt cillum. Quis laboris do ipsum laboris do exercitation qui in. Deserunt irure magna ad aliquip tempor. In fugiat ut ullamco ullamco. Est elit do laborum reprehenderit veniam id cillum consectetur labore. Ad voluptate enim eiusmod incididunt anim. Amet mollit eiusmod nisi occaecat.</p>
+      </div>
+     
     </div>
    );
 }

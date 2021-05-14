@@ -6,7 +6,7 @@ import * as ftSty from './footer.module.scss'
 
 const FooterContact = () => {
   return ( 
-    <div style={{alignSelf: "start", marginLeft:'30px'}}>
+    <div style={{alignSelf: "start", marginLeft:'5px'}}>
       <ul className={ftSty.aboutListTop}>
         <li>
           <h4 className={ftSty.aboutListTitle}>Contact Us</h4>

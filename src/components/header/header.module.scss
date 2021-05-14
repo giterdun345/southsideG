@@ -1,6 +1,10 @@
 //  FONT 
 @import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@600&display=swap');
 $Open: 'Open Sans';
+
+@import url('https://fonts.googleapis.com/css2?family=Syncopate:wght@400;700&display=swap');
+$Syncopate: "Syncopate";
+
 // HEX COLOR 
 $blue: #61B7E8;
 $dark: #4C5B61;
@@ -49,9 +53,9 @@ $neonGreen: #33ff00;
 }
 
 .navLink{
-  font-family: $Open;
-  font-size: 2.5vw;
-  font-weight: 400;
+  font-family: $Syncopate;
+  font-size: 2.2vw;
+  font-weight: 700;
   color: $dark;
   text-transform: uppercase;
 }

@@ -4,19 +4,24 @@ import * as ldSty from './landing.module.scss'
 
 const Hero = () => {
   return ( 
-    <div style={{display: 'grid'}}>
+    <div style={{display: 'grid'}} >
       <StaticImage
         src="../../images/heroImg.jpg"
         layout='fullWidth'
         placeholder='blurred'
         formats={["AUTO", "WEBP", "AVIF"]}
         alt="Nicely painted kitchen and living room"
-        style={{gridArea:'1/1', }}
+        style={{gridArea:'1/1'}}
+        
+        
       />
       <div className={ldSty.heroOverlay}>
-          {/* Any content here will be centered in the component */}
-            <h1>Hero text</h1>
-        </div>
+      <h1 className={ldSty.overlayTitle}>FRIENDLY. PROMPT. RELIABLE.</h1>
+            <div className={ldSty.ctaButtons}>
+              <button>Free Estimate</button>
+              <button>Call Now</button>
+            </div>
+      </div>
     </div>
    );
 }

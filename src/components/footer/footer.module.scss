@@ -1,16 +1,18 @@
-@import url('https://fonts.googleapis.com/css2?family=Gelasio:wght@400;500&display=swap');
-$Gelasio: "Gelasio";
-@import url('https://fonts.googleapis.com/css2?family=Roboto+Condensed:ital,wght@0,400;0,700;1,300&display=swap');
-// 300 400 700 
-$RobotoCond: "Roboto Condensed";
-@import url('https://fonts.googleapis.com/css2?family=Squada+One&display=swap');
-$SquadaOne: 'Squada One';
-
 @import url('https://fonts.googleapis.com/css2?family=Londrina+Shadow&display=swap');
-$Orbitron: "Londrina Shadow";
+$Lond: "Londrina Shadow"; //
 
 @import url('https://fonts.googleapis.com/css2?family=Amatic+SC:wght@700&display=swap');
-$Amatic: "Amatic SC";
+$Amatic: "Amatic SC"; //
+
+@import url('https://fonts.googleapis.com/css2?family=Syncopate:wght@400;700&display=swap');
+$Syncopate: "Syncopate"; //
+
+@import url('https://fonts.googleapis.com/css2?family=Cutive&display=swap');
+$Cutive: 'Cutive'; // @root
+
+@import url('https://fonts.googleapis.com/css2?family=Julius+Sans+One&display=swap');
+$Julia: "Julia Sans One"; //
+
 // HEX COLOR 
 $blue: #61B7E8;
 $dark: #4C5B61;
@@ -23,6 +25,7 @@ $light: #E4E6C3;
 
 .genericAnchor {
 	color: $blue;
+
 	&:visited {
 		color: $orange
 	}
@@ -37,7 +40,7 @@ $light: #E4E6C3;
 }
 
 footer {
-  font: 11px $Gelasio, sans-serif;
+  font: 10px $Cutive, sans-serif;
   background: $dark;
   width: 100%;
   min-height: 200px;
@@ -85,8 +88,8 @@ footer {
 
 // ======================ABOUT/ CONTACT COMPONENT 
 .aboutListTop {
-  text-align: center;
   margin-top: 20px;
+   
 
   li {
     text-align: center;
@@ -101,13 +104,13 @@ footer {
   padding: 10px 0 0px 0;
   margin: 0 auto;
   color: $light;
-  font: 3em $RobotoCond;
+  font: 3em $Cutive;
   border-bottom: 3px ridge $laural;
   text-shadow: 0.5px 1.5px 3px $laural;
 }
 
 .footerListAnchor {
-  font: 1.5em "Open Sans", sans-serif;
+  font: 1.5em $Julia;
   color: $lav;
 }
 
@@ -137,7 +140,7 @@ footer {
   position: relative;
   z-index: 5;
   background-color: $dark;
-  font: 3em $Orbitron, sans-serif;
+  font: 3em $Lond, sans-serif;
   color: #fff;
   margin: 0 10px;
 }
