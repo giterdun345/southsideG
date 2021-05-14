@@ -1,5 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Squada+One&display=swap');
 $SquadaOne: 'Squada One';
+
 @import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
 $Bebas: "Bebas Neue";
 
@@ -14,6 +15,9 @@ $Orelaga: "Orelaga One";
 
 @import url('https://fonts.googleapis.com/css2?family=Arsenal:ital@0;1&display=swap');
 $Arsenal: 'Arsenal';
+
+@import url('https://fonts.googleapis.com/css2?family=Cutive&display=swap');
+$Cutive: 'Cutive'; // @root
 
 // HEX COLOR 
 $blue: #61B7E8;
@@ -38,6 +42,24 @@ $pink: #D36582;
   justify-content: center;
   background-color: rgba(0, 0, 0, 0.2);
   max-width: 100%;
+
+  .titleWrapper{
+    background-color: rgba(0, 0, 0, 0.4);
+    width: 80%;
+    padding: 2rem;
+    
+    h2, h3{
+      margin: 0;
+    }
+    h3{
+      text-align: center;
+      color: white;
+      font-family: "Open Sans";
+      font-style: italic;
+      font-size: 1.75vw;
+      margin-bottom: 2rem;
+    }
+  }
 
   .overlayTitle{
     text-align: center;
@@ -76,19 +98,63 @@ $pink: #D36582;
       display: inline-block;
       cursor: pointer;
       text-align: center;
+      transition: 0.8s;
    }
    
    button:hover {
       background: $orange;
-      border: solid #FFAE00 1px;
-      -webkit-border-radius: 20px;
-      -moz-border-radius: 20px;
-      border-radius: 20px;
+      border: double #FFAE00 1px;
       text-decoration: none;
    }
   }
 }
 // ================================ END HERO 
+
+
+
+
+
+//  ==================================== CONTENT OF LANDING PAGE
+.contentContainer{
+ 
+ 
+}
+
+.workmanshipContainer{
+
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-around;
+  align-content: center;
+  text-align: center;
+  width: 80%;
+  margin: 5rem auto;
+
+  .workmanshipTxt{
+    width: 60%;
+    align-self: center;
+  }
+
+  button{
+    width: 100%;
+  }
+
+  // .workmanshipImg{
+  //   display: grid;
+  //   position: relative;
+  //   place-items: center;
+  
+  //   .workmanshipOverlay{
+  //     grid-area: 1 / 1;
+  //   }
+}
+
+
+
+
+
+//  ======================================= END OF LANDING PAGE CONTENT 
+
 .heroTitle{
   color: white;
   text-shadow: 1px 2.5px $dark;
@@ -110,14 +176,6 @@ $pink: #D36582;
 .titleContainer{
   display:grid;
 
-}
-
-
-
-
-//  ==================================== CONTENT OF LANDING PAGE
-.contentContainer{
- 
 }
 
 .contentHeader{

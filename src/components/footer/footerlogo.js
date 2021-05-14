@@ -22,7 +22,7 @@ import { FaCopyright } from 'react-icons/fa';
       </section>
       <div className={ftSty.logoBottomWrapper}>
         <Link to="/termsofuse" className={ftSty.genericAnchor} rel="nofollow">Terms</Link>
-         | 
+        &nbsp; | &nbsp;
         <Link to="/privacypolicy" className={ftSty.genericAnchor} rel="nofollow">Privacy</Link>
       </div>
     </section>
