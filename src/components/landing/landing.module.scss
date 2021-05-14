@@ -1,14 +1,19 @@
-@import url('https://fonts.googleapis.com/css2?family=Gelasio:wght@400;500&display=swap');
-$Gelasio: "Gelasio";
-@import url('https://fonts.googleapis.com/css2?family=Lato&display=swap');
-$Lato: "Lato";
-@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@600&display=swap');
-$Open: 'Open Sans';
-@import url('https://fonts.googleapis.com/css2?family=Roboto+Condensed:ital,wght@0,400;0,700;1,300&display=swap');
-// 300 400 700 
-$RobotoCond: "Roboto Condensed";
 @import url('https://fonts.googleapis.com/css2?family=Squada+One&display=swap');
 $SquadaOne: 'Squada One';
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
+$Bebas: "Bebas Neue";
+
+@import url('https://fonts.googleapis.com/css2?family=Syncopate:wght@400;700&display=swap');
+$Syncopate: "Syncopate";
+
+@import url('https://fonts.googleapis.com/css2?family=Julius+Sans+One&display=swap');
+$Juli: "Julius Sans One";
+
+@import url('https://fonts.googleapis.com/css2?family=Orelega+One&display=swap');
+$Orelaga: "Orelaga One";
+
+@import url('https://fonts.googleapis.com/css2?family=Arsenal:ital@0;1&display=swap');
+$Arsenal: 'Arsenal';
 
 // HEX COLOR 
 $blue: #61B7E8;
@@ -22,17 +27,97 @@ $light: #E4E6C3;
 $gray: #DFEFCA;
 $pink: #D36582;
 
-
+//  ============================================ HERO IMAGE WITH OVERLAY
 .heroOverlay{
   grid-area: 1 / 1;
   position: relative;
   place-items: center;
-  display: grid;
+  display: flex;
+  flex-flow: column nowrap;
+  align-content: center;
+  justify-content: center;
+  background-color: rgba(0, 0, 0, 0.2);
+  max-width: 100%;
+
+  .overlayTitle{
+    text-align: center;
+    font-family: $Juli;
+    font-size: 5vw;
+    color: white;
+    text-shadow: 3px 3px 4px $dark;
+  }
+
+  .ctaButtons{
+    width: 100%;
+    display: flex;
+    justify-content: space-evenly;
+    
+    button {
+      background: $blue;
+      background-image: -webkit-linear-gradient(top, $blue, #1E62D0);
+      background-image: -moz-linear-gradient(top, $blue, #1E62D0);
+      background-image: -ms-linear-gradient(top, $blue, #1E62D0);
+      background-image: -o-linear-gradient(top, $blue, #1E62D0);
+      background-image: -webkit-gradient(to bottom, $blue, #1E62D0);
+      -webkit-border-radius: 5rem;
+      -moz-border-radius: 5rem;
+      border-radius: 5rem;
+      color: #FFFFFF;
+      font-family: $Bebas;
+      font-size: 3vw;
+      font-weight: 100;
+      padding: 3vw;
+      -webkit-box-shadow: 7px 1px 25px 6px #000000;
+      -moz-box-shadow: 7px 1px 25px 6px #000000;
+      box-shadow: 7px 1px 25px 6px #000000;
+      text-shadow: -4px -2px 13px #000000;
+      border: solid #FFFFFF 3px;
+      text-decoration: none;
+      display: inline-block;
+      cursor: pointer;
+      text-align: center;
+   }
+   
+   button:hover {
+      background: $orange;
+      border: solid #FFAE00 1px;
+      -webkit-border-radius: 20px;
+      -moz-border-radius: 20px;
+      border-radius: 20px;
+      text-decoration: none;
+   }
+  }
+}
+// ================================ END HERO 
+.heroTitle{
+  color: white;
+  text-shadow: 1px 2.5px $dark;
+  font: 2rem $SquadaOne;
+  font-weight: bold;
+  text-transform: uppercase;
+  text-align: center;
+  grid-area: 1 / 1;
+  position: relative;
+  place-items: center;
+  z-index: 4;
+
+  span{
+    display: block;
+    font-size: 1rem;
+  }
+}
+
+.titleContainer{
+  display:grid;
+
 }
 
 
-.contentContainer{
 
+
+//  ==================================== CONTENT OF LANDING PAGE
+.contentContainer{
+ 
 }
 
 .contentHeader{
