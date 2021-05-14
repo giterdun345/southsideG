@@ -196,3 +196,59 @@
 //     width: 245px !important;
 //   }
 // }
+
+{/* <div style={{display: 'grid',  placeItems: 'center'}}>
+        <StaticImage
+          src="../../images/swoosh.png"
+          layout='constrained'
+          width={450}
+          placeholder='dominantColor'
+          formats={["AUTO", "WEBP", "AVIF"]}
+          alt="Nicely painted kitchen and living room"
+          style={{gridArea:'1/1'}}
+          transformOptions={{fit:'cover', cropFocus:"attention"}}
+          />
+          <StaticImage
+          src="../../images/workmanshipImg.jpg"
+          layout='constrained'
+          width={250}
+          placeholder='blurred'
+          formats={["AUTO", "WEBP", "AVIF"]}
+          alt="Nicely painted kitchen and living room"
+          style={{gridArea:'1/1'}}
+          />
+
+        </div> */}
+
+
+
+
+        // .workmanshipContainer{
+
+          //   display: flex;
+          //   flex-flow: row wrap;
+          //   justify-content: space-around;
+          //   align-content: center;
+          //   text-align: center;
+          //   width: 80%;
+          //   margin: 5rem auto;
+          
+          //   .workmanshipTxt{
+          //     width: 60%;
+          //     align-self: center;
+          //   }
+          
+          //   button{
+          //     width: 100%;
+          //   }
+          
+          //   // .workmanshipImg{
+          //   //   display: grid;
+          //   //   position: relative;
+          //   //   place-items: center;
+            
+          //   //   .workmanshipOverlay{
+          //   //     grid-area: 1 / 1;
+          //   //   }
+          // }
+          

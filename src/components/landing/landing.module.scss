@@ -11,13 +11,19 @@ $Syncopate: "Syncopate";
 $Juli: "Julius Sans One";
 
 @import url('https://fonts.googleapis.com/css2?family=Orelega+One&display=swap');
-$Orelaga: "Orelaga One";
+$Orelega: "Orelega One";
 
 @import url('https://fonts.googleapis.com/css2?family=Arsenal:ital@0;1&display=swap');
 $Arsenal: 'Arsenal';
 
 @import url('https://fonts.googleapis.com/css2?family=Cutive&display=swap');
 $Cutive: 'Cutive'; // @root
+
+@import url('https://fonts.googleapis.com/css2?family=Bentham&display=swap');
+$Bentham: 'Bentham';
+
+@import url('https://fonts.googleapis.com/css2?family=Crimson+Text&display=swap');
+$Crimson:"Crimson Text";
 
 // HEX COLOR 
 $blue: #61B7E8;
@@ -117,38 +123,100 @@ $pink: #D36582;
 //  ==================================== CONTENT OF LANDING PAGE
 .contentContainer{
  
- 
 }
 
-.workmanshipContainer{
-
-  display: flex;
-  flex-flow: row wrap;
-  justify-content: space-around;
-  align-content: center;
+.workmanshipTxt{
   text-align: center;
-  width: 80%;
-  margin: 5rem auto;
+  margin: 7rem 0 7rem 0;
 
-  .workmanshipTxt{
-    width: 60%;
-    align-self: center;
+  p{
+    font: 1.25em $Crimson;
+    
+    width: 80%;
+    margin: 0 auto;
   }
 
   button{
-    width: 100%;
-  }
+    font-family:$Bebas;
+    width: 50%;
+    margin: 2rem auto;
+    padding: 0.75em;
+    display: block;
+    border: none;
+  } 
 
-  // .workmanshipImg{
-  //   display: grid;
-  //   position: relative;
-  //   place-items: center;
-  
-  //   .workmanshipOverlay{
-  //     grid-area: 1 / 1;
-  //   }
+  .btn-one {
+    transition: all 0.3s;
+    position: relative;
+  }
+  .btn-one span {
+    transition: all 0.3s;
+    z-index: 4
+  }
+  .btn-one::before {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 1;
+    opacity: 0;
+    transition: all 2s;
+    border-top-width: 1px;
+    border-bottom-width: 1px;
+    border-top-style: solid;
+    border-bottom-style: solid;
+    border-top-color: $red;
+    border-bottom-color: $red;
+    transform: scale(0.1, 1);
+  }
+  .btn-one:hover span {
+    letter-spacing: 2px;
+  }
+  .btn-one:hover::before {
+    opacity: 1;	
+    transform: scale(1, 1);	
+  }
+  .btn-one::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 1;
+    transition: all 1s;
+    background-color: rgba(253, 82, 0, 0.09);
+  }
+  .btn-one:hover::after {
+    opacity: 0;	
+    transform: scale(0.1, 1);
+  }
 }
 
+.wkTitle{
+  font: 4.5vw $Arsenal;
+  margin: 0 1rem;
+}
+
+@media screen and (max-width: 768px){
+  .wkTitle{
+    font-size: 3em;
+  }
+}
+
+@media screen and (max-width: 585px){
+  .workmanshipTxt{
+    button{
+      width: 90%;
+    }
+  }
+  .wkTitle{
+    font-size: 2em;
+  }
+  
+}
 
 
 
