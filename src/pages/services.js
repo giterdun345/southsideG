@@ -5,7 +5,7 @@ const Services = () => {
   return ( 
     <Layout>
     <div> 
-      The services offered
+    Services here 
     </div>
     </Layout>
    );
