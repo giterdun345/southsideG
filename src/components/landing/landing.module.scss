@@ -333,34 +333,75 @@ a{
     }
   }
 }
+//  =========================================== WHY CHOOSE US? 
+ .chooseContainer{
+  display: flex;
+  flex-flow: row wrap-reverse;
+  justify-content: center;
+  margin: 0;
+  padding: 0;
+  font-size: 1.25em;
+}
 
-//  ======================================= END OF LANDING PAGE CONTENT 
+.chooseContainerX{
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: center;
+  margin: 0;
+  padding: 0;
+  font-size: 1.25em;
+}
 
-.heroTitle{
-  color: white;
-  text-shadow: 1px 2.5px $dark;
-  font: 2rem $SquadaOne;
-  font-weight: bold;
-  text-transform: uppercase;
-  text-align: center;
-  grid-area: 1 / 1;
-  position: relative;
-  place-items: center;
-  z-index: 4;
+.chooseTxt{
+  width: 640px;
+  height: 360px;
+  background-color: $gray;
 
-  span{
-    display: block;
-    font-size: 1rem;
+  h2{
+    font-family: $Juli;
+  }
+
+  ul{
+    font-family: $Crimson;
+    list-style-type:circle;
+    text-align: left;
+    width: 80%;
   }
 }
 
-.titleContainer{
-  display:grid;
-
+@media screen and(max-width: 425px){
+  .chooseTxt{
+   height: 500px;
+  }
 }
 
-.contentHeader{
-  font-family: $SquadaOne;
-  text-align: center;
+//  ======================================= END OF LANDING PAGE CONTENT 
 
-}
+// .heroTitle{
+//   color: white;
+//   text-shadow: 1px 2.5px $dark;
+//   font: 2rem $SquadaOne;
+//   font-weight: bold;
+//   text-transform: uppercase;
+//   text-align: center;
+//   grid-area: 1 / 1;
+//   position: relative;
+//   place-items: center;
+//   z-index: 4;
+
+//   span{
+//     display: block;
+//     font-size: 1rem;
+//   }
+// }
+
+// .titleContainer{
+//   display:grid;
+
+// }
+
+// .contentHeader{
+//   font-family: $SquadaOne;
+//   text-align: center;
+
+// }

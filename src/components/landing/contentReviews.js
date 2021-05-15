@@ -1,14 +1,20 @@
 import React from 'react'
-import { StaticImage } from "gatsby-plugin-image"
 import './landing.module.scss'
 import Slider from "react-slick";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
-
 import * as ldSty from './landing.module.scss'
 
 import {GrPrevious, GrNext} from 'react-icons/gr'
 
+// button fix used to rid warning https://github.com/akiran/react-slick/issues/1195
+const RightButtonFix = ({currentSlide, slideCount, children, ...props}) => (
+  <GrNext{...props}>{children}</GrNext>
+);
+
+const LeftButtonFix = ({currentSlide, slideCount, children, ...props}) => (
+  <GrPrevious{...props}>{children}</GrPrevious>
+);
 
 const ContentReviews = () => {
   const settings = {
@@ -25,18 +31,18 @@ const ContentReviews = () => {
     pauseOnDotsHover: true,
     pauseOnHover: true,
     swipeToSlide: true,
-    nextArrow: <GrNext />,
-    prevArrow: <GrPrevious />,
+    nextArrow: <RightButtonFix />,
+    prevArrow: <LeftButtonFix />,
     dotsClass: `slick-dots ${ldSty.dots}`,
     className: ldSty.slides
   };
 
   return (
     <div className={ldSty.contentTxt}>
-      <h2 className={ldSty.contentTitle}>Here's what our customers have to say:</h2>
+      <h2 className={ldSty.contentTitle}>Here's what our customers say:</h2>
         <div style={{margin:'2rem auto', width:'85%'}} >
             <Slider {...settings}>
-              <div style={{backgroundColor:'red'}}>
+              <div>
                 <p>We've used Charles and his team at Southside Paint +More for years now. He's done amazing work at our rental property. The work is always above and beyond. They do a lot more than painting as well, door work, vent work, sheetrock, and faucet replacement. I highly recommend giving their team a shout for your next project.</p>
                 <h4>Cheyanne W.</h4>
               </div>

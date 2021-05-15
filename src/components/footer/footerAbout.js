@@ -24,7 +24,7 @@ const FooterAbout = () => {
           <Link to='/careers' className={`${ftSty.genericAnchor}, ${ftSty.footerListAnchor}`}>JOB OPENINGS</Link>
         </li>
         <li>
-          <Link to='/contact' className={`${ftSty.genericAnchor}, ${ftSty.footerListAnchor}`}>REACH OUT</Link>
+          <Link to='/about' className={`${ftSty.genericAnchor}, ${ftSty.footerListAnchor}`}>MORE ABOUT US</Link>
         </li>
       </ul>
     </div>
