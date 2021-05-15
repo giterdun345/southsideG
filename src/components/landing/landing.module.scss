@@ -238,6 +238,7 @@ a{
     overflow: hidden;
     position: relative;
     font: 4rem $Bebas;
+    // padding-top: 5px;
     letter-spacing: 2px;
     border: 5px solid $lav;
     box-shadow: 3px 3px 5px $laural;
@@ -270,7 +271,7 @@ a{
 }
 
 .card:hover .cardTilte {
-    bottom: -67px;
+    bottom: 100;
 }
 
 .cardDeatails i {
@@ -281,7 +282,7 @@ a{
 .cardDeatails h4 {
     font-size: 2rem;
     color: #1d365c;
-    margin: 20px 0;
+    margin: 15px 0;
 }
 
 .cardDeatails a {
