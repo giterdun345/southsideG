@@ -4,16 +4,14 @@ import { StaticImage } from "gatsby-plugin-image"
 // COMPONENTS 
 import ContentAbout from './contentAbout'
 import ContentServices from './contentServices'
+import ContentReviews from './contentReviews'
 const Content = () => {
   return ( 
     <div >
       <ContentAbout />
       <ContentServices />
-    
-      <div>
-        <h3>Here's what our customers had to say:</h3>
-          Carousel for reviews
-      </div>
+      <ContentReviews />
+      
       <div>
         <h3>Why choose us?</h3>
           icons or something to outline the reasons
@@ -21,9 +19,9 @@ const Content = () => {
       <div className={ldSty.contentHeader}>
         <p>Welcome to</p>
         <div className={ldSty.titleContainer}>
-              <h1 className={ldSty.heroTitle}>
+              {/* <h1 className={ldSty.heroTitle}>
                 Southside <span>Paint + More</span>
-              </h1>
+              </h1> */}
               <StaticImage
               src="../../images/swoosh.png"
               layout='fullWidth'
@@ -33,7 +31,7 @@ const Content = () => {
               alt="paint swoosh"
               style={{gridArea:'1/1'}}
               />
-            </div>
+        </div>
         <hr></hr>
         <p>Nisi irure proident cupidatat est cupidatat pariatur Lorem deserunt cillum. Quis laboris do ipsum laboris do exercitation qui in. Deserunt irure magna ad aliquip tempor. In fugiat ut ullamco ullamco. Est elit do laborum reprehenderit veniam id cillum consectetur labore. Ad voluptate enim eiusmod incididunt anim. Amet mollit eiusmod nisi occaecat.</p>
       </div>

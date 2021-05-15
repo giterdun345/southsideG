@@ -1,12 +1,10 @@
 import React from 'react';
-import Logo from '../components/header/logo'
+import Layout from "../components/layout/layout"
 
 const PrivacyPolicy = () => {
   return (
+    <Layout>
     <div style={{width:'90%', margin:'auto'}}>
-      <div style={{textAlign: 'center'}}>
-        <Logo />
-      </div>
       <h1 style={{textAlign:'center'}}>Privacy Policy</h1>
         <p>Last updated: May 13, 2021</p>
         <p>This Privacy Policy describes Our policies and procedures on the collection, use and disclosure of Your information when You use the Service and tells You about Your privacy rights and how the law protects You.</p>
@@ -133,6 +131,7 @@ const PrivacyPolicy = () => {
         <li>By phone number: <a href='tel:904-524-8784'>904-524-8784</a></li>
       </ul>
     </div> 
+    </Layout>
    )
 }
  

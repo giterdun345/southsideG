@@ -1,12 +1,11 @@
 import React from 'react'
-import Logo from '../components/header/logo'
+import Layout from "../components/layout/layout"
+
 
 const TermsOfUse = () => {
   return ( 
+    <Layout>
     <div style={{width:'90%', margin:'auto'}}>
-      <div style={{textAlign: 'center'}}>
-        <Logo />
-      </div>
       <h1 style={{textAlign:'center'}}>Terms and Conditions of Use</h1>
         <h2>Terms</h2>
           <p>By accessing and using this website, web page, client portal, or mobile application, including but not limited to any content, functionality and services offered on or through this website, web page, client portal, or mobile application, or our e-mails, texts, posts and other electronic messages (collectively, our “Site”), you are agreeing to be bound by these Terms and Conditions of Use, all applicable laws and regulations, and agree that you are responsible for compliance with any applicable local laws. If you do not agree with any of these terms, you are prohibited from using or accessing this Site.</p>
@@ -48,6 +47,7 @@ const TermsOfUse = () => {
         <h2>Entire Agreement</h2>
           <p>These Terms and Conditions of Use, our Privacy Policy and any other document we deem relevant constitute the sole and entire agreement between you and us with respect to our Site and supersede all prior and contemporaneous understandings, agreements, representations and warranties, both written and oral, with respect to our Site</p>
     </div>
+    </Layout>
    );
 }
  
