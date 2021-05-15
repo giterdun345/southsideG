@@ -68,22 +68,6 @@ const ContentChoose = () => {
                 width={640}
               />
       </div>
-{/* ROW 4  */}
-      <div className={ldSty.chooseContainer}>
-        {/* <div class="layout__item layout__item--body">
-          <h2>Lorem Ipsum</h2>
-          <p>
-            Lorem ipsum dolor sit amet, consetetur sadipscing
-            elitr, sed diam nonumy eirmod tempor invidunt ut
-            labore et dolore magna aliquyam erat, sed diam voluptua.
-          </p>
-        </div>
-        <div class="layout__item layout__item--figure">
-          <img src="https://images.unsplash.com/photo-1513843000111-3eb82159a25c?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=82618557ca42a6477f6bb9390eea27bc&auto=format&fit=crop&w=600&q=80" alt="">
-        </div>
-      </div> */}
-    </div>
-
   </div>
    );
 }

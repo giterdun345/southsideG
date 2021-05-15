@@ -314,11 +314,11 @@ a{
 .dots{
     margin-top:1rem !important;
 
-    button:before{
-      margin: 1.5rem auto !important;
+    button:before{    
+      margin: 2rem auto!important;
       color: $blue !important;
       opacity: 1 !important;
-      font-size: 1rem !important;
+      font-size: 1.5rem !important;
       line-height: 1rem !important;
     }
 }
@@ -326,10 +326,10 @@ a{
 @media screen and(max-width: 768px){
   .slides{
     p{
-      font-size: 3vw;
+      font-size: 3.75vw;
     }
     h4{
-      font-size: 3vw;
+      font-size: 3.75vw;
     }
   }
 }

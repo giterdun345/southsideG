@@ -28,7 +28,7 @@ const ContentServices = () => {
                 <p>
                   Having contractors doing work in your home can be disruptive. We make a remodel a pleaseant experience with consistency and communication.
                 </p>
-                <Link to="/contact">Learn More</Link>
+                <Link to="/contact">Book Now</Link>
               </div>
 	        </div>
 {/* EXTERIOR PAINTING  */}
@@ -50,7 +50,7 @@ const ContentServices = () => {
               <p>
                 We recognize that painting an exterior not only enhances its look but also protects your home from the elements we have in Florida. We take pride in that.
               </p>
-              <Link to="/contact">Learn More</Link>
+              <Link to="/contact">Book Now</Link>
             </div>
           </div>
 {/* PRESSuRE WASHING  */}
@@ -72,7 +72,7 @@ const ContentServices = () => {
               <p>
                 It is imperative to maintain your exterior to preserve the investment you made in your property. It's the easiest way to make your property look fresh without repairs.
               </p>
-              <a href="/contact">Learn More</a>
+              <a href="/contact">Book Now</a>
             </div>
           </div>    
 {/* WALLPAPER REMOVAL  */}
@@ -94,7 +94,7 @@ const ContentServices = () => {
               <p>
               Facing the headache of attempting the DIY route for removing old, damaged, or just plain ugly wallpaper? Want a smooth, fresh look for your walls? Save yourself the hassle!    
               </p>
-              <a href="/contact">Learn More</a>
+              <a href="/contact">Book Now</a>
             </div>
           </div>
 {/* CARPENTRY  */}
@@ -116,7 +116,7 @@ const ContentServices = () => {
               <p>
               Whether it’s interior wall repairs, exterior wood rot repairs, or installing decorative moldings, we can provide customizations with attention to detail and precision.    
               </p>
-              <a href="/contact">Learn More</a>
+              <a href="/contact">Book Now</a>
             </div>
           </div>
 {/* COLOR RESOURCES  */}
@@ -138,7 +138,7 @@ const ContentServices = () => {
               <p>
                 We know choosing colors can be stressful. We can help you make a stress free decision. We can ease that pressure offering many resources and expertise in design.
               </p>
-              <a href="/contact">Learn More</a>
+              <a href="/contact">Book Now</a>
             </div>
           </div>
 {/* GEL STAINING */}
@@ -159,7 +159,7 @@ const ContentServices = () => {
               <h4>Gel Staining</h4>
               <p>
                 Do you want to refinish your kitchen cabinets, or some old dresser without spending having to strip and sand off the old finish? We got you covered either way. &nbsp;  </p>
-              <Link to="/contact">Learn More</Link>
+              <Link to="/contact">Book Now</Link>
             </div>
           </div>
         </div>

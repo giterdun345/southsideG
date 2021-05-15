@@ -38,8 +38,8 @@ const ContentReviews = () => {
   };
 
   return (
-    <div className={ldSty.contentTxt}>
-      <h2 className={ldSty.contentTitle}>Here's what our customers say:</h2>
+      <div className={ldSty.contentTxt}>
+        <h2 className={ldSty.contentTitle}>Here's what our customers say:</h2>
         <div style={{margin:'2rem auto', width:'85%'}} >
             <Slider {...settings}>
               <div>
@@ -67,11 +67,13 @@ const ContentReviews = () => {
                 <h4>Charles H</h4>
               </div>
             </Slider>
-          </div>
+          </div >
+          <div style={{marginTop:'5rem'}}>
             <a href='https://www.google.com/search?q=google+reviews+southside+paint+and+more&oq=google+reviews+southside+paint+and+more+&aqs=chrome..69i57j69i64.6099j0j7&sourceid=chrome&ie=UTF-8#lrd=0x88e5b4e8f30a4409:0x660986e01c090be3,1,,,' >
               <button className={ldSty.btnOne}><span>More Reviews</span></button>
             </a>
-          </div>
+          </div>      
+       </div>
   );
 }
  

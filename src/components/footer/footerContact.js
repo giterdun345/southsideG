@@ -17,12 +17,6 @@ const FooterContact = () => {
         <li>
           <a href="tel:904-524-8784" className={`${ftSty.genericAnchor}, ${ftSty.footerListAnchor}`} >904-524-8784 </a>
         </li>
-        {/* <li>
-          <Link to='/contact' className={`${ftSty.genericAnchor}, ${ftSty.footerListAnchor}`} >GALLERY OF WORK</Link>
-        </li>
-        <li>
-          <Link to='/careers' className={`${ftSty.genericAnchor}, ${ftSty.footerListAnchor}`} >JOB OPENINGS</Link>
-        </li> */}
         <li>
           <Link to='/contact' className={`${ftSty.genericAnchor}, ${ftSty.footerListAnchor}`} >SEND MESSAGE</Link>
         </li>
