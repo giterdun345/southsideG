@@ -6,7 +6,7 @@ const ContentChoose = () => {
   return ( 
     <div className={ldSty.contentTxt}>
       <h2 className={ldSty.contentTitle}>Why Choose Us?</h2>
-      <p style={{margin:'3rem auto'}}> Our commitment to excellence, attention to detail and outstanding customer service have allowed us to become who we are today. With over 20 years in the industry, we are able to offer our expertise with a 100% satisfaction gaurunteed.      </p>
+      <p style={{margin:'3rem auto'}}> Our commitment to excellence, attention to detail and outstanding customer service has allowed us to become who we are today. With over 20 years in the industry, we are able to offer our expertise with a 100% satisfaction gaurunteed.      </p>
       {/* ROW 1  */}
       <div className={ldSty.chooseContainer}>
         <div className={`${ldSty.chooseTxt}`}>

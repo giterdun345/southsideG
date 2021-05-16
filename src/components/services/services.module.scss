@@ -1,0 +1,174 @@
+@import url('https://fonts.googleapis.com/css2?family=Squada+One&display=swap');
+$SquadaOne: 'Squada One';
+
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
+$Bebas: "Bebas Neue";
+
+@import url('https://fonts.googleapis.com/css2?family=Syncopate:wght@400;700&display=swap');
+$Syncopate: "Syncopate";
+
+@import url('https://fonts.googleapis.com/css2?family=Julius+Sans+One&display=swap');
+$Juli: "Julius Sans One";
+
+@import url('https://fonts.googleapis.com/css2?family=Orelega+One&display=swap');
+$Orelega: "Orelega One";
+
+@import url('https://fonts.googleapis.com/css2?family=Arsenal:ital@0;1&display=swap');
+$Arsenal: 'Arsenal';
+
+@import url('https://fonts.googleapis.com/css2?family=Cutive&display=swap');
+$Cutive: 'Cutive'; // @root
+
+@import url('https://fonts.googleapis.com/css2?family=Bentham&display=swap');
+$Bentham: 'Bentham';
+
+@import url('https://fonts.googleapis.com/css2?family=Crimson+Text&display=swap');
+$Crimson:"Crimson Text";
+
+// HEX COLOR 
+$blue: #61B7E8;
+$dark: #4C5B61;
+$lav: #E3D3E4;
+$red: #E3170A;
+$orange: #FD5200;
+$laural: #ADB993;
+$green: #949D6A;
+$light: #E4E6C3;
+$gray: rgb(235, 233, 233);
+$pink: #D36582;
+
+.heroOverlay{
+  grid-area: 1 / 1;
+  position: relative;
+  place-items: center;
+  display: flex;
+  flex-flow: column nowrap;
+  align-content: center;
+  justify-content: center;
+  background-color: rgba(0, 0, 0, 0.2);
+  width: 100%;
+
+  .titleWrapper{
+    background-color: rgba(0, 0, 0, 0.4);
+    width: 80%;
+    padding: 2rem;
+    
+    h2{
+      margin: 4rem auto;
+    }
+  }
+
+  .overlayTitle{
+    text-align: center;
+    font-family: $Juli;
+    font-size: 5vw;
+    color: white;
+    text-shadow: 3px 3px 4px $dark;
+  }
+
+  .ctaButtons{
+    width: 100%;
+    display: flex;
+    justify-content: space-evenly;
+    
+    button {
+      background: $blue;
+      background-image: -webkit-linear-gradient(top, $blue, #1E62D0);
+      background-image: -moz-linear-gradient(top, $blue, #1E62D0);
+      background-image: -ms-linear-gradient(top, $blue, #1E62D0);
+      background-image: -o-linear-gradient(top, $blue, #1E62D0);
+      background-image: -webkit-gradient(to bottom, $blue, #1E62D0);
+      -webkit-border-radius: 5rem;
+      -moz-border-radius: 5rem;
+      border-radius: 5rem;
+      color: #FFFFFF;
+      font-family: $Bebas;
+      font-size: 3vw;
+      font-weight: 100;
+      padding: 3vw;
+      -webkit-box-shadow: 7px 1px 25px 6px #000000;
+      -moz-box-shadow: 7px 1px 25px 6px #000000;
+      box-shadow: 7px 1px 25px 6px #000000;
+      text-shadow: -4px -2px 13px #000000;
+      border: solid #FFFFFF 3px;
+      text-decoration: none;
+      display: inline-block;
+      cursor: pointer;
+      text-align: center;
+      transition: 0.8s;
+   }
+   
+   button:hover {
+      background: $orange;
+      border: double #FFAE00 1px;
+      text-decoration: none;
+   }
+  }
+}
+
+// =======================================> END HERO 
+
+
+
+// -===========================================> SERVICES LIST
+.listContainer{
+  p{
+    font: 1.25em $Crimson;
+    
+    width: 80%;
+    margin: 0 auto;
+  }
+
+}
+
+.servicesTitle{
+  font: 5rem $Arsenal;
+  text-align: center;
+}
+
+.services{
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-evenly;
+}
+
+.serviceItem{
+  height: 400px;
+  width: 375px;
+  border: 1px solid $dark;
+  box-shadow: 5px 5px 5px $dark;
+  place-items: center;
+  margin: 2rem 5px;
+  
+
+  h2{
+    font: 3em $Bebas;
+    text-align: center;
+    width: 90%;
+    margin:0 auto;
+    padding:0; 
+  }
+
+  img:hover {
+      -webkit-transform: scale(1.3);
+      transform: scale(1.3);
+  }
+  
+}
+
+// ======================================  REMAINDER OF SERVICES 
+
+.history{
+
+}
+
+.dosColumns{
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-evenly;
+}
+
+
+
+
+

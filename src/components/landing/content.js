@@ -13,9 +13,6 @@ const Content = () => {
       <ContentServices />
       <ContentChoose />
       <ContentReviews />
-
-      
-   
     </div>
    );
 }
