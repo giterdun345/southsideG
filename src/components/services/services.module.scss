@@ -114,7 +114,6 @@ $pink: #D36582;
 .listContainer{
   p{
     font: 1.25em $Crimson;
-    
     width: 80%;
     margin: 0 auto;
   }
@@ -158,16 +157,106 @@ $pink: #D36582;
 
 // ======================================  REMAINDER OF SERVICES 
 
-.history{
+.servicesBlurb{
+  h3{
+    font: 5rem $Arsenal;
+    text-align: center;
+  }
+
+  p{
+    font: 1.25em $Crimson;
+    width: 80%;
+    margin: 0 auto;
+  }
 
 }
+
+.colTitle{
+  font: 2rem $Orelega;
+  text-align: center;
+}
+
 
 .dosColumns{
   display: flex;
   flex-flow: row wrap;
   justify-content: space-evenly;
+  font-family: $Orelega;
+  font-style: italic;
+  font-size: 1.5rem;
+  h5{
+      font: 1.25em $Juli;
+      color:$orange;
+      font-size: 1.5em;
+      margin: 0 auto;
+    }
 }
 
+@media screen and (max-width: 426px){
+  .servicesBlurb{
+    h3{
+      font-size: 2.5rem
+    }
+  }
+  .colTitle{
+    font-size: 1.5rem;
+  }
+  .dosColumns{
+    font-size: 1em;
+  }
+}
+
+// ===========================================> SERVICES CTA 
+
+.servicesCta{
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-between;
+  margin-top: 4rem;
+  // height: 479px;
+  border-top: 3.5px solid black;
+  overflow-x: hidden;
+}
+
+.ctaContact{
+  width: 40%;
+  text-align: center;
+  font: 1.25rem $Crimson;
+  padding: 8rem 2.75rem;
+
+  h3{
+    font: 2.5rem $Arsenal;
+  }
+}
+
+.ctaContactButtons{
+  font-family: $Bebas;
+  color: $red;
+
+  button{
+    margin: 1rem auto;
+    padding: 1rem;
+    border: 3px solid black;
+    background: transparent;
+    cursor: pointer;
+  }
+
+  button:hover{
+    background-color: $orange;
+  }
+  
+}
+
+
+@media screen and (max-width: 119px){
+  .servicesCta{
+    justify-content: center;
+  }
+
+  .ctaContact{
+    width: 100%
+  }
+}
 
 
 

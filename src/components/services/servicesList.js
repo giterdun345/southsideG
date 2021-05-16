@@ -1,11 +1,11 @@
 import React from 'react'
 import {StaticImage} from 'gatsby-plugin-image'
-// import {Link} from 'gatsby'
+import {Link} from 'gatsby'
 import * as svSty from './services.module.scss'
 
 const servicesList = () => {
   return ( 
-    <div className={svSty.listContainer}>
+    <div>
        <h1 className={svSty.servicesTitle}>Our Services</h1>
         {/* <p> When someone arrives at your home or place of business, something as simple as the color and quality of the paint can make a significant impact on their first impression. With help from our team
             here at Southside Paint + More, you can arrive at your property with a fresh feel, new look and a reflection of your personal style. We offer you pristine painting services as well as an array of 

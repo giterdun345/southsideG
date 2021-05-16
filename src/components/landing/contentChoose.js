@@ -69,7 +69,7 @@ const ContentChoose = () => {
               />
       </div>
   </div>
-   );
+  );
 }
  
 export default ContentChoose;

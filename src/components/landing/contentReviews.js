@@ -69,7 +69,7 @@ const ContentReviews = () => {
             </Slider>
           </div >
           <div style={{marginTop:'5rem'}}>
-            <a href='https://www.google.com/search?q=google+reviews+southside+paint+and+more&oq=google+reviews+southside+paint+and+more+&aqs=chrome..69i57j69i64.6099j0j7&sourceid=chrome&ie=UTF-8#lrd=0x88e5b4e8f30a4409:0x660986e01c090be3,1,,,' >
+            <a href='https://www.google.com/search?q=google+reviews+southside+paint+and+more&oq=google+reviews+southside+paint+and+more+&aqs=chrome..69i57j69i64.6099j0j7&sourceid=chrome&ie=UTF-8#lrd=0x88e5b4e8f30a4409:0x660986e01c090be3,1,,,' target="_blank" rel="noreferrer" title="google reviews">
               <button className={ldSty.btnOne}><span>More Reviews</span></button>
             </a>
           </div>      

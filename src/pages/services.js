@@ -1,4 +1,6 @@
 import React from 'react'
+import Seo from "../components/layout/seo"
+
 import {Link} from 'gatsby'
 import { StaticImage } from "gatsby-plugin-image"
 import Layout from "../components/layout/layout"
@@ -9,16 +11,15 @@ import * as svSty from '../components/services/services.module.scss'
 const Services = () => {
   return ( 
     <Layout>
+      <Seo title="Services" />
       <div style={{display: 'grid'}} >
         <StaticImage
           src="../images/workmanshipImg.jpg"
           layout='fullWidth'
-
           placeholder='blurred'
           formats={["AUTO", "WEBP", "AVIF"]}
           alt="freshly painted and clean"
           style={{gridArea:'1/1'}}
-
         />
         <div className={svSty.heroOverlay}>
           <div className={svSty.titleWrapper}>
@@ -31,9 +32,9 @@ const Services = () => {
         </div>
       </div>
       <div>
-       <ServicesList /> 
+        <ServicesList /> 
       </div>
-      <ServicesExtra />
+        <ServicesExtra />
     </Layout>
    );
 }

@@ -303,8 +303,12 @@ a{
   width:80%;
   margin: 0 auto;
   font-family:$Crimson;
-
+  background-color: $light;
+  border-radius: 25%;
+  box-shadow: 0 0 25px $lav;
+  
   p{
+    margin-top: 4rem;
     font-size: 2em;
   }
   h4{
@@ -378,31 +382,3 @@ a{
 
 //  ======================================= END OF LANDING PAGE CONTENT 
 
-// .heroTitle{
-//   color: white;
-//   text-shadow: 1px 2.5px $dark;
-//   font: 2rem $SquadaOne;
-//   font-weight: bold;
-//   text-transform: uppercase;
-//   text-align: center;
-//   grid-area: 1 / 1;
-//   position: relative;
-//   place-items: center;
-//   z-index: 4;
-
-//   span{
-//     display: block;
-//     font-size: 1rem;
-//   }
-// }
-
-// .titleContainer{
-//   display:grid;
-
-// }
-
-// .contentHeader{
-//   font-family: $SquadaOne;
-//   text-align: center;
-
-// }
