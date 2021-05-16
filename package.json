@@ -5,6 +5,7 @@
   "description": "Offering Commercial and Residential painting services as well as an array of related jobs with competitive prices and satisfication guaranteed!",
   "author": "John Ketterer <johnmketterer@gmail.com>",
   "dependencies": {
+    "dotenv": "^9.0.2",
     "gatsby": "^3.5.0",
     "gatsby-plugin-gatsby-cloud": "^2.5.0",
     "gatsby-plugin-image": "^1.5.0",
@@ -13,6 +14,7 @@
     "gatsby-plugin-react-helmet": "^4.5.0",
     "gatsby-plugin-sass": "^4.5.0",
     "gatsby-plugin-sharp": "^3.5.0",
+    "gatsby-source-cloudinary": "^0.1.14",
     "gatsby-source-filesystem": "^3.5.0",
     "gatsby-transformer-sharp": "^3.5.0",
     "hamburger-react": "^2.4.1",

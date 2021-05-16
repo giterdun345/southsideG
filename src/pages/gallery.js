@@ -39,7 +39,6 @@ const images = data.allCloudinaryMedia.edges;
                     <img 
                         src={image.node.secure_url} 
                         alt={image.node.context.custom.alt} >
-                        className={}
                     </img>
                     <figcaption>{image.node.context.custom.caption}</figcaption>
                 </figure>
