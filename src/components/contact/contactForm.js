@@ -44,9 +44,10 @@ const ContactForm = () => {
               data-netlify="true" 
               data-netlify-honeypot="bot-field" 
               data-netlify-recaptcha="true"
-              subject="Hey Mom you got a contact email"
+              // subject="Hey Mom you got a contact email"
               >
-          <div className={ctSty.formGroup}>
+            <input type="hidden" name="form-name" value="contact" />
+            <div className={ctSty.formGroup}>
             {/* <label for="name-input">Tell us your name*</label> */}
             <input name="name" type="text" placeholder="Name" required/>
           </div>
