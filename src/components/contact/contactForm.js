@@ -11,7 +11,7 @@ const ContactForm = () => {
       <div className={ctSty.leftContainer}>
         <div className={ctSty.leftInfoContainer}>
           <StaticImage
-            src="../../images/paintswatch.jpg"
+            src="../../images/paintSwatch.jpg"
             layout='constrained'
             objectFit='cover'
             placeholder='blurred'
