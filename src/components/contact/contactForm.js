@@ -38,13 +38,13 @@ const ContactForm = () => {
       </div>
       <div className={ctSty.rightContainer}>
         <h2>Send Us A Message</h2>
-        <form name="contact" 
+        <form name="contact-form" 
               method="POST" 
               data-netlify="true" 
               data-netlify-recaptcha="true"
               subject="Hey Mom you got a contact email"
               >
-            <input type="hidden" name="form-name" value="contact" />
+            <input type="hidden" name="form-name" value="contact-form" />
             <div className={ctSty.formGroup}>
             {/* <label for="name-input">Tell us your name*</label> */}
             <input name="name" type="text" placeholder="Name" required/>
@@ -61,7 +61,7 @@ const ContactForm = () => {
             {/* <label for="message-textarea">Message</label> */}
             <textarea name="message" placeholder="Write your message"></textarea>
           </div>
-          <button type='submit'>Send message</button>
+          <button type='submit' value="Submit">Send message</button>
           <div data-netlify-recaptcha="true"></div>
         </form>
       </div>

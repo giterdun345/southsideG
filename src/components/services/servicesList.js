@@ -121,7 +121,7 @@ const servicesList = () => {
           {/* PLASTER AND DRYWALL  */}
         <div className={`${svSty.serviceItem}`}>
           <StaticImage
-                src="../../images/drywall.jpg"
+                src="../../images/drywallUP.jpg"
                 layout='fixed'
                 loading= "lazy"
                 transformOptions={{fit: "cover", cropFocus: "attention"}}
