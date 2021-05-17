@@ -1,0 +1,100 @@
+@import url('https://fonts.googleapis.com/css2?family=Squada+One&display=swap');
+$SquadaOne: 'Squada One';
+
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
+$Bebas: "Bebas Neue";
+
+@import url('https://fonts.googleapis.com/css2?family=Syncopate:wght@400;700&display=swap');
+$Syncopate: "Syncopate";
+
+@import url('https://fonts.googleapis.com/css2?family=Julius+Sans+One&display=swap');
+$Juli: "Julius Sans One";
+
+@import url('https://fonts.googleapis.com/css2?family=Orelega+One&display=swap');
+$Orelega: "Orelega One";
+
+@import url('https://fonts.googleapis.com/css2?family=Arsenal:ital@0;1&display=swap');
+$Arsenal: 'Arsenal';
+
+@import url('https://fonts.googleapis.com/css2?family=Cutive&display=swap');
+$Cutive: 'Cutive'; // @root
+
+@import url('https://fonts.googleapis.com/css2?family=Bentham&display=swap');
+$Bentham: 'Bentham';
+
+@import url('https://fonts.googleapis.com/css2?family=Crimson+Text&display=swap');
+$Crimson:"Crimson Text";
+
+// HEX COLOR 
+$blue: #61B7E8;
+$dark: #4C5B61;
+$lav: #E3D3E4;
+$red: #E3170A;
+$orange: #FD5200;
+$laural: #ADB993;
+$green: #949D6A;
+$light: #E4E6C3;
+$gray: rgb(235, 233, 233);
+$pink: #D36582;
+
+.careerTop{
+
+
+  h1{
+    text-align: center;
+    font-family: $Juli;
+    font-size: 5.3vw;
+  }
+
+  .subText{
+    font: 2.5vw $Arsenal;
+    width: 80%;
+    margin: 0 auto;
+  }
+
+  h2{
+    margin-left:4rem;
+    margin-bottom: 0;
+    font: 5vw $Crimson;
+  }
+
+  .mission{
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-evenly;
+
+
+    p{
+      min-width: calc(60% - 2rem);
+      padding:1rem;
+      font: 2vw $Crimson;
+    }
+
+    
+  }
+ 
+  
+}
+
+.bannerList{
+ display: flex;
+ flex-flow: row wrap;
+ justify-content: space-around;
+ margin-top: 2rem;
+
+ .bannerItem{
+  width: 300px;
+  text-align: center;
+  font-family: $Crimson;
+  font-size: 2rem;
+  }
+
+  .bannerImg{
+    border: none;
+    // border-radius: 50%;
+    box-shadow: 1px 1px 7px 2px $dark;
+  }
+}
+
+
+

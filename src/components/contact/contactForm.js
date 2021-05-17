@@ -41,28 +41,21 @@ const ContactForm = () => {
         <form name="contact-form" 
               method="POST" 
               data-netlify="true" 
-              // data-netlify-recaptcha="true"
-              subject="Hey Mom you got a contact email"
-              >
-            <input type="hidden" name="form-name" value="contact-form" />
+        >
+          <input type="hidden" name="form-name" value="contact-form" />
             <div className={ctSty.formGroup}>
-            {/* <label for="name-input">Tell us your name*</label> */}
-            <input name="name" type="text" placeholder="Name" required/>
-          </div>
+              <input name="name" type="text" placeholder="Name" required/>
+            </div>
           <div className={ctSty.formGroup}>
-            {/* <label for="email-input">Enter your email*</label> */}
             <input name="email" type="email" placeholder="Email" required />
           </div>
           <div className={ctSty.formGroup}>
-            {/* <label for="phone-input">Enter phone number*</label> */}
             <input name="phone" type="tel" placeholder="Phone Number" required/>
           </div>
           <div className={ctSty.formGroup}>
-            {/* <label for="message-textarea">Message</label> */}
             <textarea name="message" placeholder="Write your message"></textarea>
           </div>
           <button type='submit' value="Submit">Send message</button>
-          {/* <div data-netlify-recaptcha="true"></div> */}
         </form>
       </div>
     </div>
