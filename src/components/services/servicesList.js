@@ -1,6 +1,6 @@
 import React from 'react'
 import {StaticImage} from 'gatsby-plugin-image'
-import {Link} from 'gatsby'
+// import {Link} from 'gatsby'
 import * as svSty from './services.module.scss'
 
 const servicesList = () => {

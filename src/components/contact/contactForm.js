@@ -1,8 +1,6 @@
 import React from 'react'
 import * as ctSty from './contact.module.scss'
 import { StaticImage } from 'gatsby-plugin-image'
-import {Link} from 'gatsby'
-
 import {ImLocation} from 'react-icons/im'
 import {TiPhoneOutline} from 'react-icons/ti'
 import {MdEmail} from 'react-icons/md'
@@ -12,20 +10,21 @@ const ContactForm = () => {
     <div className={ctSty.contactForm}>
       <div className={ctSty.leftContainer}>
         <div className={ctSty.leftInfoContainer}>
-        <StaticImage
-          src="../../images/paintswatch.jpg"
-          layout='constrained'
-          objectFit='cover'
-          placeholder='blurred'
-          formats={["AUTO", "WEBP", "AVIF"]}
-          alt="array of colors"
-          height={350}
-        /> 
+          <StaticImage
+            src="../../images/paintswatch.jpg"
+            layout='constrained'
+            objectFit='cover'
+            placeholder='blurred'
+            formats={["AUTO", "WEBP", "AVIF"]}
+            alt="array of colors"
+            height={350}
+          /> 
           <div>
             <h3><ImLocation/>&nbsp; Address</h3>
             <p>2055 Derham Rd
               <br/>
-               Jacksonville, Fl 32246</p>
+               Jacksonville, Fl 32246
+            </p>
           </div>
           <div>
             <h3><TiPhoneOutline />&nbsp; Give us a call</h3>
@@ -42,9 +41,9 @@ const ContactForm = () => {
         <form name="contact" 
               method="POST" 
               data-netlify="true" 
-              data-netlify-honeypot="bot-field" 
+              // data-netlify-honeypot="bot-field" 
               data-netlify-recaptcha="true"
-              // subject="Hey Mom you got a contact email"
+              subject="Hey Mom you got a contact email"
               >
             <input type="hidden" name="form-name" value="contact" />
             <div className={ctSty.formGroup}>

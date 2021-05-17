@@ -38,23 +38,4 @@ const ServicesCTA = () => {
 
 }
  
-
-
-// <div className={svSty.servicesCta}>
-    // <div style={{marginTop:'50rem'}}>
-    //   <StaticImage
-    //       src="../../images/heroImg.jpg"
-    //       layout='contained'
-    //       placeholder='blurred'
-    //       formats={["AUTO", "WEBP", "AVIF"]}
-    //       alt="working outside"
-    //       // style={{gridArea:'1/1'}}
-    //       height={400}
-    //       width={400}
-    //     />
-        {/* <div style={{gridArea:'1/1', zIndex:'5'}}>
-        BUttons*
-        </div> */}
-    // </div>
-
 export default ServicesCTA;
