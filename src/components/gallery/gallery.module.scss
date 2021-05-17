@@ -1,0 +1,27 @@
+
+
+
+.imagegrid {
+  display: grid;
+  grid-gap: 10px;
+  grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+  grid-auto-rows: minmax(50px, auto);
+  width: 95%;
+  margin: 0 auto;
+}
+.imagegrid .imageitem:nth-child(5n) {
+  grid-column-end: span 2;
+}
+.imagegrid img {
+  display: flex;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  min-width: 200px;
+}
+
+// @media screen and (max-width: 425px){
+//   .imagegrid{
+//     flex-flow: column nowrap;
+//   }
+// }

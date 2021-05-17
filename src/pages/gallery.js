@@ -1,50 +1,54 @@
 import React from 'react'
 import Seo from "../components/layout/seo"
 import {useStaticQuery, graphql} from 'gatsby';
+import SimpleReactLightbox, { SRLWrapper }  from 'simple-react-lightbox'
 
+
+import * as gdSty from '../components/gallery/gallery.module.scss'
 
 import Layout from "../components/layout/layout"
 
 const Gallery = () => {
-  const data = useStaticQuery(
-    graphql`
-    query CloudinaryImage {
-        allCloudinaryMedia {
-        edges {
-            node {
-                secure_url
-                context {
-                    custom {
-                        alt
-                        caption
-                    }
-                }
-                resource_type
-            }
+    const data = useStaticQuery(
+      graphql`
+      query CloudinaryImage {
+          allCloudinaryMedia {
+          edges {
+              node {
+                  secure_url
+                  context {
+                      custom {
+                          alt
+                        
+                      }
+                  }
+                  resource_type
+              }
+          }
         }
-      }
-    }`
-);
+      }`
+    );
 
-const images = data.allCloudinaryMedia.edges;
-
+  const images = data.allCloudinaryMedia.edges;
 
   return ( 
     <Layout>
       <Seo title="Gallery" />
-    
-      <div className="container">
-            {images.map((image, index) => (
-                <figure className="wave" key={`${index}-image`}>
-                    <img 
-                        src={image.node.secure_url} 
-                        alt={image.node.context.custom.alt} >
-                    </img>
-                    <figcaption>{image.node.context.custom.caption}</figcaption>
-                </figure>
-                ))
-            }
-        </div>
+      <SimpleReactLightbox>
+        <SRLWrapper>
+          <div className={gdSty.imagegrid}>
+              {images.map((image, index) => (
+                  <div className={gdSty.imageitem} key={`${index}-image`}>
+                      <img 
+                          src={image.node.secure_url} 
+                          alt={image.node.context.custom.alt} >
+                      </img>
+                  </div>
+                  ))
+              }
+          </div>
+          </SRLWrapper>
+        </SimpleReactLightbox>
     </Layout>
    );
 }

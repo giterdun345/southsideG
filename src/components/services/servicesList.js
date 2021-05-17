@@ -7,11 +7,6 @@ const servicesList = () => {
   return ( 
     <div>
        <h1 className={svSty.servicesTitle}>Our Services</h1>
-        {/* <p> When someone arrives at your home or place of business, something as simple as the color and quality of the paint can make a significant impact on their first impression. With help from our team
-            here at Southside Paint + More, you can arrive at your property with a fresh feel, new look and a reflection of your personal style. We offer you pristine painting services as well as an array of 
-            related jobs with competitive prices and satisfication guaranteed. We take pride in our work and complete the job right the <span style={{color: '#FD5200'}}>first time</span>!
-            <Link to='/contact' ><button className={svSty.btnOne}><span>Request A Free Consultation</span></button></Link>
-        </p> */}
       <div className={svSty.services}>
         {/* flex container for services  */}
         {/* INTERIOR PAINTING  */}
@@ -80,7 +75,7 @@ const servicesList = () => {
           {/* STAINING  */}
         <div className={`${svSty.serviceItem}`}>
           <StaticImage
-                src="../../images/workStain.jpg"
+                src="../../images/workstain.jpg"
                 layout='fixed'
                 loading= "lazy"
                 transformOptions={{fit: "cover", cropFocus: "attention"}}

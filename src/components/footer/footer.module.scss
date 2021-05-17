@@ -42,7 +42,7 @@ $light: #E4E6C3;
 footer {
   font: 10px $Cutive, sans-serif;
   background: $dark;
-  width: 100%;
+  min-width: 100vw;
   min-height: 200px;
   display: flex;
   flex-flow: row wrap;
