@@ -1,6 +1,6 @@
 import React from 'react'
 // import {Link} from 'gatsby'
-import {StaticImage} from 'gatsby-plugin-image'
+// import {StaticImage} from 'gatsby-plugin-image'
 import ServicesCTA from './servicesCTA'
 import * as svSty from './services.module.scss'
 
@@ -11,17 +11,8 @@ const ServicesExtra = () => {
         <h3>Where Experience is a Must.</h3>
         <p>Our consistent high standards of thorough preparation in all of our projects lead to a high quality and long lasting finish every time. Although quality is our focus, we also strive to offer competitive rates. We may not offer the lowest prices but we believe we offer the best value – we do not cut corners or compromise our high standards of workmanship and because we conduct a full site inspection and specification before we begin a project, our quotes are accurate and the costs won’t increase after the work begins.</p>
       </div>
-      <div style={{display: 'grid', marginTop:'4rem'}} >
-        {/* <StaticImage
-          src="../../images/swoosh.png"
-          layout='fullWidth'
-          objectFit='cover'
-          placeholder='blurred'
-          formats={["AUTO", "WEBP", "AVIF"]}
-          alt="swoosh of paint"
-          style={{gridArea:'1/1', opacity:'0.6'}}
-        /> */}
-        <div style={{gridArea:'1/1', zIndex:'5'}}>
+      <div style={{marginTop:'4rem'}} >
+        <div>
           <h4 className={svSty.colTitle} >We have a breadth experience</h4>
           <div className={svSty.dosColumns} >
             <div className={svSty.unColumn}>
@@ -63,12 +54,7 @@ const ServicesExtra = () => {
           </div>
         </div>
       </div>
-    
-      
-
-
       <ServicesCTA />
-
     </div>
    );
 }

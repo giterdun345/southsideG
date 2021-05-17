@@ -1,0 +1,199 @@
+@import url('https://fonts.googleapis.com/css2?family=Squada+One&display=swap');
+$SquadaOne: 'Squada One';
+
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
+$Bebas: "Bebas Neue";
+
+@import url('https://fonts.googleapis.com/css2?family=Syncopate:wght@400;700&display=swap');
+$Syncopate: "Syncopate";
+
+@import url('https://fonts.googleapis.com/css2?family=Julius+Sans+One&display=swap');
+$Juli: "Julius Sans One";
+
+@import url('https://fonts.googleapis.com/css2?family=Orelega+One&display=swap');
+$Orelega: "Orelega One";
+
+@import url('https://fonts.googleapis.com/css2?family=Arsenal:ital@0;1&display=swap');
+$Arsenal: 'Arsenal';
+
+@import url('https://fonts.googleapis.com/css2?family=Cutive&display=swap');
+$Cutive: 'Cutive'; // @root
+
+@import url('https://fonts.googleapis.com/css2?family=Bentham&display=swap');
+$Bentham: 'Bentham';
+
+@import url('https://fonts.googleapis.com/css2?family=Crimson+Text&display=swap');
+$Crimson:"Crimson Text";
+
+// HEX COLOR 
+$blue: #61B7E8;
+$dark: #4C5B61;
+$lav: #E3D3E4;
+$red: #E3170A;
+$orange: #FD5200;
+$laural: #ADB993;
+$green: #949D6A;
+$light: #E4E6C3;
+$gray: rgb(235, 233, 233);
+$pink: #D36582;
+
+
+$border: 1px solid #e6e6e6;
+
+.intro{
+  font: 4rem $Arsenal;
+  text-align: center;
+}
+
+.contact-form {
+	width: 80vw;
+	display: flex;
+	justify-content: space-between;
+	// background: $white;
+	margin: 5rem auto;
+	
+	& > * {
+		width: 50%;
+	}
+	
+	.left-container {
+		display: flex;
+    flex-flow: column nowrap;
+		justify-content: center;
+		align-items: center;
+		
+		.left-info-container {
+			div {
+				margin: 24px 0;
+
+				h3 {
+          font: 20px $Crimson;
+					padding-bottom: 10px;
+          color: $orange;
+				}
+
+				p {
+					font: 20px $Bentham;
+				}
+
+        a {
+					font: 20px $Bentham;
+          color: black;
+				}
+
+        a:hover{
+          color:$red;
+        }
+			}
+		}
+	}
+	
+	.right-container {
+		padding: 30px;
+    overflow: hidden;
+   
+		
+		h2 {
+			font: 2.2rem $Arsenal;
+			// color: $black;
+			line-height: 1.2;
+    	text-align: center;
+			margin-bottom: 20px;
+		}
+		
+		form {
+			display: flex;
+			flex-direction: column;
+			
+			.form-group {
+				margin-bottom: 10px;
+					
+				* {
+					min-height: 55px;
+          border:none;
+					border-bottom: 2px solid $dark;
+					padding: 0 20px;
+				}
+				
+				label {
+					display: flex;
+					align-items: center;
+					// width: 100%;
+					border: none;
+					font-size: 16px;
+					// color: $black;
+					text-transform: uppercase;
+					margin-top: -1px;
+				}
+				
+				&:first-of-type input {
+					width: 50%;
+					margin-right: -5px;
+				}
+				
+				input {
+					width: 85%;
+					font: 1.8rem $Bentham;
+					margin-top: -2px;
+				}
+				
+				input::placeholder, textarea::placeholder {
+					color: $dark;
+          font: 1.8rem $Bentham;
+				}
+				
+				textarea {
+          font: 1.5rem $Bentham;
+					width: 85%;
+					min-height: 80px;
+          min-width: 280px;
+					padding: 10px 20px;
+					margin-top: -1px;
+				}
+			}
+			
+			button {
+				width: 200px;
+    		height: 50px;
+        margin-top: 1.2rem;
+				background: $blue;
+				color: white;
+				font: 2.2rem $Bebas;
+				text-transform: uppercase;
+				border: 0;
+        box-shadow: 2px 2px 50px 5px $lav;
+				position: relative;
+				left: calc(50% - 100px);
+				cursor: pointer;
+				
+				&:hover {
+					background: $orange;
+				}
+			}
+		}
+	}
+}
+
+@media screen and (max-width: 800px) {
+	.contact-form {
+		width: 90vw;
+	}
+}
+
+@media screen and (max-width: 700px) {
+	.contact-form {
+		flex-direction: column-reverse;
+		
+		& > * {
+			width: 100%;
+		}
+		
+		.left-container {
+			padding: 40px 0;
+		}
+
+    .right-container{
+      padding: 10px;
+    }
+	}
+}
