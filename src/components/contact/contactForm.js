@@ -41,7 +41,6 @@ const ContactForm = () => {
         <form name="contact" 
               method="POST" 
               data-netlify="true" 
-              // data-netlify-honeypot="bot-field" 
               data-netlify-recaptcha="true"
               subject="Hey Mom you got a contact email"
               >
