@@ -41,7 +41,7 @@ const ContactForm = () => {
         <form name="contact-form" 
               method="POST" 
               data-netlify="true" 
-              data-netlify-recaptcha="true"
+              // data-netlify-recaptcha="true"
               subject="Hey Mom you got a contact email"
               >
             <input type="hidden" name="form-name" value="contact-form" />
@@ -62,7 +62,7 @@ const ContactForm = () => {
             <textarea name="message" placeholder="Write your message"></textarea>
           </div>
           <button type='submit' value="Submit">Send message</button>
-          <div data-netlify-recaptcha="true"></div>
+          {/* <div data-netlify-recaptcha="true"></div> */}
         </form>
       </div>
     </div>
