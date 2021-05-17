@@ -48,21 +48,21 @@ const ContactForm = () => {
               >
           <div className={ctSty.formGroup}>
             {/* <label for="name-input">Tell us your name*</label> */}
-            <input name="name" id="name-input" type="text" placeholder="Name" required/>
+            <input name="name" type="text" placeholder="Name" required/>
           </div>
           <div className={ctSty.formGroup}>
             {/* <label for="email-input">Enter your email*</label> */}
-            <input name="email" id="email-input" type="email" placeholder="Email" required />
+            <input name="email" type="email" placeholder="Email" required />
           </div>
           <div className={ctSty.formGroup}>
             {/* <label for="phone-input">Enter phone number*</label> */}
-            <input name="phone" id="phone-input" type="tel" placeholder="Phone Number" required/>
+            <input name="phone" type="tel" placeholder="Phone Number" required/>
           </div>
           <div className={ctSty.formGroup}>
             {/* <label for="message-textarea">Message</label> */}
-            <textarea name="message" id="message-textarea" placeholder="Write your message"></textarea>
+            <textarea name="message" placeholder="Write your message"></textarea>
           </div>
-          <button>Send message</button>
+          <button type='submit'>Send message</button>
           <div data-netlify-recaptcha="true"></div>
         </form>
       </div>
