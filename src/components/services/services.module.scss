@@ -172,7 +172,7 @@ $pink: #D36582;
 }
 
 .colTitle{
-  font: 2rem $Orelega;
+  font: 3.25rem $Arsenal;
   text-align: center;
 }
 
@@ -181,11 +181,18 @@ $pink: #D36582;
   display: flex;
   flex-flow: row wrap;
   justify-content: space-evenly;
-  font-family: $Orelega;
-  font-style: italic;
+  font-family: $Arsenal;
+  // font-style: italic;
   font-size: 1.5rem;
+
+  .unColumn{
+    padding: 3rem;
+    border: 2px solid $gray;
+    border-radius: 20px;
+    }
+
   h5{
-      font: 1.25em $Juli;
+      font: 1.25em $Arsenal;
       color:$orange;
       font-size: 1.5em;
       margin: 0 auto;

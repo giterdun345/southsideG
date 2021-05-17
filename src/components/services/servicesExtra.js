@@ -12,7 +12,7 @@ const ServicesExtra = () => {
         <p>Our consistent high standards of thorough preparation in all of our projects lead to a high quality and long lasting finish every time. Although quality is our focus, we also strive to offer competitive rates. We may not offer the lowest prices but we believe we offer the best value – we do not cut corners or compromise our high standards of workmanship and because we conduct a full site inspection and specification before we begin a project, our quotes are accurate and the costs won’t increase after the work begins.</p>
       </div>
       <div style={{display: 'grid', marginTop:'4rem'}} >
-        <StaticImage
+        {/* <StaticImage
           src="../../images/swoosh.png"
           layout='fullWidth'
           objectFit='cover'
@@ -20,11 +20,11 @@ const ServicesExtra = () => {
           formats={["AUTO", "WEBP", "AVIF"]}
           alt="swoosh of paint"
           style={{gridArea:'1/1', opacity:'0.6'}}
-        />
+        /> */}
         <div style={{gridArea:'1/1', zIndex:'5'}}>
           <h4 className={svSty.colTitle} >We have a breadth experience</h4>
           <div className={svSty.dosColumns} >
-            <div>
+            <div className={svSty.unColumn}>
             <h5>Residential Services</h5>
               <ul>
                 <li>Single Family</li>
@@ -38,7 +38,7 @@ const ServicesExtra = () => {
                 <li>Home Developments</li>
               </ul>
             </div>
-            <div>
+            <div className={svSty.unColumn}>
               <h5>Commercial Services</h5>
                 <ul>
                 <li>Shopping Centers</li>
