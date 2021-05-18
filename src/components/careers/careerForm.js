@@ -7,7 +7,7 @@ const CareerForm = () => {
     <div className={crSty.formContainer}>
       <h2>Submit an Application</h2>
       <form name="applications" method="POST" data-netlify="true" onSubmit="submit">
-        <input type="hidden" name="application-form-name" value="applications" />
+        <input type="hidden" name="form-name" value="applications" />
             {/* FULL NAME  */}
           <div className={crSty.formGroup}>
             <label for="name" required>
