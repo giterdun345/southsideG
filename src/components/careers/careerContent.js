@@ -31,7 +31,7 @@ const CareerContent = () => {
           <p>
             The promises made to our customers is a first priority. From the timing of their project to the budget, we are a family owned and operated business and it is key to success that we keep our word.
             We practice continuous improvement and are always thinking about how to make our customer’s experience better — from communicating and collaborating with them to delivering expert painting techniques.
-            It is important to us that customers, and employees all feel valued and respected along every step of the way. We want you to grow with us..
+            It is important to us that customers, and employees all feel valued and respected along every step of the way. We want you to grow with us.
           </p>
         </div>
       </div>
