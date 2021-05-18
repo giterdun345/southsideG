@@ -99,10 +99,11 @@ const CareerForm = () => {
               <input type="file" name="resume" />
             </label>
           </div>        */}
+          <div style={{textAlign:'center'}}>
+            <button type='submit' value="submit">Submit Application</button>
+          </div>
       </form>
-      <div style={{textAlign:'center'}}>
-      <button type='submit' value="submit">Submit Application</button>
-      </div>
+      
     </div>
    );
 }
