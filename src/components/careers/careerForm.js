@@ -1,8 +1,7 @@
 import React from 'react'
 import * as crSty from './career.module.scss'
-
 import {CgAsterisk} from 'react-icons/cg'
-import {BsQuestionSquare} from 'react-icons/bs'
+
 const CareerForm = () => {
   return ( 
     <div className={crSty.formContainer}>
@@ -36,11 +35,11 @@ const CareerForm = () => {
               <div className={crSty.typeBox}>
                 <label for="fulltime">
                   Full Time
-                  <input type="checkbox" name="fullPart" value="full-time"/>
+                  <input type="checkbox" name="fulltime" value="full-time"/>
                 </label>
                 <label for="parttime">
                   Part Time
-                  <input type="checkbox" name="fullPart" value="part-time"/>
+                  <input type="checkbox" name="parttime" value="part-time"/>
                 </label>
               </div>
           </div>
@@ -50,11 +49,11 @@ const CareerForm = () => {
             <div className={crSty.typeBox} >
               <label for="license">
                 Yes
-                <input type="radio" name="license" value="yes license" checked/>
+                <input type="radio" name="Yeslicense" value="yes license" checked/>
               </label>
               <label for="license">
                 No
-                <input type="radio" name="license" value="no license" />
+                <input type="radio" name="Nolicense" value="no license" />
               </label>
             </div>
           </div>
@@ -64,26 +63,26 @@ const CareerForm = () => {
             <div className={crSty.typeBox} >
               <label for="transportation">
                 Yes
-                <input type="radio" name="transportation" value="no transportation" checked/>
+                <input type="radio" name="Yestransportation" value="yes transportation" checked/>
               </label>
 
               <label for="transportation">
                 No
-                <input type="radio" name="transportation" value="yes transportation" />
+                <input type="radio" name="Notransportation" value="no transportation" />
               </label>
             </div>
           </div>
           {/* YEARS OF Experience */}
           <div className={crSty.formGroup} style={{minWidth:'300px'}}>
-            <label for="years experience">Years of Experience <br/>
-              <input name="years-experience" type="number" placeholder="1" required/>
+            <label for="yearsexperience">Years of Experience <br/>
+              <input name="yearsexperience" type="number" placeholder="1" required/>
             </label>
           </div>
           {/* START DATE  */}
           <div className={crSty.formGroup}>
-            <label for="start date">
+            <label for="startdate">
               When can you start? <br/>
-              <input name="start date" type="date" />
+              <input name="startdate" type="date" />
             </label>
           </div>
           {/* QUESTION  */}

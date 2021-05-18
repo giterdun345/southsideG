@@ -1,22 +1,19 @@
-//  FONT 
-@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@600&display=swap');
-$Open: 'Open Sans';
+ @import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@600&family=Syncopate:wght@400;700&display=swap');
 
-@import url('https://fonts.googleapis.com/css2?family=Syncopate:wght@400;700&display=swap');
-$Syncopate: "Syncopate";
+//  TYPOGRAPHY 
+$Open: 'Open Sans'; //
+$Syncopate: "Syncopate"; //
 
 // HEX COLOR 
-$blue: #61B7E8;
-$dark: #4C5B61;
-$lav: #E3D3E4;
-$red: #E3170A;
-$neonGreen: #33ff00;
+$blue: #61B7E8; //
+$dark: #4C5B61; //
+$lav: #E3D3E4; //
+$red: #E3170A; //
 
 .header-container{
   position: relative;
   font-size: 62.5%;
   border-bottom: 1px solid $lav;
-  // margin: 0 5% 0 5%;
 }
 
 .navbar{
@@ -116,11 +113,4 @@ $neonGreen: #33ff00;
   }
 }
 
-// .inactive {
-//   left: -550px;
-// }
-
-// .active{
-//   left: 0;
-// }
 
