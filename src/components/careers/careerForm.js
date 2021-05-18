@@ -63,11 +63,11 @@ const CareerForm = () => {
             <div className={crSty.typeBox} >
               <label for="transportation">
                 Yes
-                <input type="radio" name="Yestransportation" value="yes_transportation" checked/>
+                <input type="radio" name="transportation" value="yes_transportation" checked/>
               </label>
               <label for="transportation">
                 No
-                <input type="radio" name="Notransportation" value="no_transportation" />
+                <input type="radio" name="transportation" value="no_transportation" />
               </label>
             </div>
           </div> 
