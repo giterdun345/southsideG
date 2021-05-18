@@ -6,27 +6,27 @@ const CareerForm = () => {
   return ( 
     <div className={crSty.formContainer}>
       <h2>Submit an Application</h2>
-      <form name="applications" method="POST" data-netlify="true">
+      <form name="applications" method="POST" data-netlify="true" onSubmit="submit">
         <input type="hidden" name="form-name" value="applications" />
             {/* FULL NAME  */}
           <div className={crSty.formGroup}>
             <label for="name" required>
               <span><CgAsterisk /></span> Full Name <br/>
-              <input name="name" type="text" placeholder="e.g. Phillip Anthropy" required/>
+              <input name="Full_name" type="text" placeholder="e.g. Phillip Anthropy" required/>
             </label>
           </div>
             {/* EMAIL ADRRESS  */}
           <div className={crSty.formGroup}>
             <label for="email" required>
               <span><CgAsterisk /></span> Email Address <br/>
-              <input name="email" type="email" placeholder="e.g. user@email.com" required />
+              <input name="Contact_email" type="email" placeholder="e.g. user@email.com" required />
             </label>
           </div>
           {/* PHONE NUMBER  */}
           <div className={crSty.formGroup}>
             <label for="phone" required>
               <span><CgAsterisk /></span> Phone Number <br/>
-              <input name="phone" type="tel" placeholder="e.g. 555-0000" required/>
+              <input name="Contact_phone" type="tel" placeholder="e.g. 555-0000" required/>
             </label> 
           </div>
         {/* FULL TIME OR PART TIME  */}
