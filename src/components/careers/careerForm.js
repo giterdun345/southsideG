@@ -101,8 +101,7 @@ const CareerForm = () => {
           </div>        */}
       </form>
       <div style={{textAlign:'center'}}>
-      <button type='submit' value="Submit">Submit Application</button>
-
+      <button type='submit' value="submit">Submit Application</button>
       </div>
     </div>
    );
