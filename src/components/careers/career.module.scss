@@ -96,5 +96,105 @@ $pink: #D36582;
   }
 }
 
+// ============================================> APPLICATION FORM 
 
+.formContainer{
 
+  margin-bottom:10rem;
+
+  h2{
+    font: 3rem $Arsenal;
+    text-align: center;
+  }
+
+  button{
+    height: 125px;
+    font: 3rem $Bebas;
+    margin: 2rem auto;
+    padding: 0 2rem;
+    text-align: center ;
+    background-color: $light;
+    box-shadow: 2px 2px 2px 2px $dark;
+  }
+}
+
+.formGroup{
+  display: grid;
+  place-content: center;
+  grid-gap: 0.5rem;
+  padding: 1rem;
+
+  span{
+    color: $orange;
+  }
+
+  input{
+    display: inline-block;
+    font-size: 16px;
+    font-size: Max(16px, 1em);
+    font-family: inherit;
+    padding: 0.25em 0.5em;
+    // background-color: #fff;
+    border: 2px solid $pink;
+    border-radius: 4px;
+    transition: 180ms box-shadow ease-in-out;
+  }
+
+  input:focus{
+    border-color: $blue;
+    box-shadow: 1px 1px 3px 1px $blue;
+    outline: 2px solid transparent;
+  }
+
+  input:not(textarea) {
+    line-height: 1;
+    height: 2.25rem;
+  }
+
+  input[type="checkbox"]{
+    width: 50%;
+  }
+
+  input[type="radio"]{
+    width: 100%;
+  }
+
+  input[type="file"]{
+    width: 100%;
+  }
+  
+  label{
+    font-family: $Bentham;
+    font-size: 1.5rem;
+    line-height: 1.6;
+  }
+
+  textarea{
+    border: 2px solid $pink;
+    width: 100%;
+    border-radius: 4px;
+    transition: 180ms box-shadow ease-in-out;
+  }
+  
+  textarea:focus{
+    border-color: $blue;
+    box-shadow: 1px 1px 3px 1px $blue;
+    outline: 2px solid transparent;
+  }
+
+}
+
+.typeBoxTitle{
+    font-family: $Bentham;
+    font-size: 1.5rem;
+    line-height: 1.6;
+}
+
+.typeBox{
+  font-family: $Bentham;
+  text-align: center;
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: space-around;
+  margin-bottom: 3rem;
+}

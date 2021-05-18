@@ -1,6 +1,7 @@
 import React from 'react'
 import * as crSty from './career.module.scss'
 
+// import GiFlyingTarget from 'react-icons/gi'
 const CareerContent = () => {
   return ( 
    <div className={crSty.careerTop}>
@@ -13,7 +14,9 @@ const CareerContent = () => {
         </p>
      </div>
       <div style={{backgroundColor:'rgb(228, 228, 228)'}}>
-        <h2>Our Mission</h2>  
+        <h2>Our Mission 
+          {/* <GiFlyingTarget /> */}
+          </h2>  
         <div className={crSty.mission}>
         <p>
           We strive to engage and build long standing relationships with our customers, whether they are individuals or an organization. Our aim is to retain our existing client base along with gaining new business

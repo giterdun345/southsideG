@@ -10,8 +10,8 @@ const Careers = () => {
     <Layout>
       <Seo title="Careers" />
       <CareerContent />
-      <CareerBanner />
       <CareerForm />
+      <CareerBanner />
     </Layout>
     
    );
