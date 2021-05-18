@@ -35,11 +35,11 @@ const CareerForm = () => {
               <div className={crSty.typeBox}>
                 <label for="fulltime">
                   Full Time
-                  <input type="checkbox" name="fulltime" value="full-time"/>
+                  <input type="checkbox" name="fulltime" value="full_time"/>
                 </label>
                 <label for="parttime">
                   Part Time
-                  <input type="checkbox" name="parttime" value="part-time"/>
+                  <input type="checkbox" name="parttime" value="part_time"/>
                 </label>
               </div>
           </div> */}
@@ -49,11 +49,11 @@ const CareerForm = () => {
             <div className={crSty.typeBox} >
               <label for="license">
                 Yes
-                <input type="radio" name="Yeslicense" value="yes license" checked/>
+                <input type="radio" name="Yeslicense" value="yes_license" checked/>
               </label>
               <label for="license">
                 No
-                <input type="radio" name="Nolicense" value="no license" />
+                <input type="radio" name="Nolicense" value="no_license" />
               </label>
             </div>
           </div> */}
@@ -63,12 +63,12 @@ const CareerForm = () => {
             <div className={crSty.typeBox} >
               <label for="transportation">
                 Yes
-                <input type="radio" name="Yestransportation" value="yes transportation" checked/>
+                <input type="radio" name="Yestransportation" value="yes_transportation" checked/>
               </label>
 
               <label for="transportation">
                 No
-                <input type="radio" name="Notransportation" value="no transportation" />
+                <input type="radio" name="Notransportation" value="no_transportation" />
               </label>
             </div>
           </div> */}
