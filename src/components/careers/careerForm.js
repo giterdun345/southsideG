@@ -30,7 +30,7 @@ const CareerForm = () => {
             </label> 
           </div>
         {/* FULL TIME OR PART TIME  */}
-          <div className={`${crSty.typeBoxTitle} ${crSty.formGroup}`}>
+          {/* <div className={`${crSty.typeBoxTitle} ${crSty.formGroup}`}>
               <h4>Part-time or Full-time position?</h4>
               <div className={crSty.typeBox}>
                 <label for="fulltime">
@@ -42,9 +42,9 @@ const CareerForm = () => {
                   <input type="checkbox" name="parttime" value="part-time"/>
                 </label>
               </div>
-          </div>
+          </div> */}
           {/* DO YOU HAVE LICENSE */}
-          <div className={`${crSty.typeBoxTitle} ${crSty.formGroup}`}>
+          {/* <div className={`${crSty.typeBoxTitle} ${crSty.formGroup}`}>
             <h4>Do you have a valid driver's license?</h4> 
             <div className={crSty.typeBox} >
               <label for="license">
@@ -56,9 +56,9 @@ const CareerForm = () => {
                 <input type="radio" name="Nolicense" value="no license" />
               </label>
             </div>
-          </div>
+          </div> */}
             {/* DO YOU HAVE TRANSPORTATION  */}
-          <div className={`${crSty.typeBoxTitle} ${crSty.formGroup}`}>
+          {/* <div className={`${crSty.typeBoxTitle} ${crSty.formGroup}`}>
             <h4>Do you have your own transportation?</h4>
             <div className={crSty.typeBox} >
               <label for="transportation">
@@ -71,34 +71,34 @@ const CareerForm = () => {
                 <input type="radio" name="Notransportation" value="no transportation" />
               </label>
             </div>
-          </div>
+          </div> */}
           {/* YEARS OF Experience */}
-          <div className={crSty.formGroup} style={{minWidth:'300px'}}>
+          {/* <div className={crSty.formGroup} style={{minWidth:'300px'}}>
             <label for="yearsexperience">Years of Experience <br/>
               <input name="yearsexperience" type="number" placeholder="1" required/>
             </label>
-          </div>
+          </div> */}
           {/* START DATE  */}
-          <div className={crSty.formGroup}>
+          {/* <div className={crSty.formGroup}>
             <label for="startdate">
               When can you start? <br/>
               <input name="startdate" type="date" />
             </label>
-          </div>
+          </div> */}
           {/* QUESTION  */}
-          <div className={crSty.formGroup} >
+          {/* <div className={crSty.formGroup} >
             <label for='question'>
               In 300 characters or less, tell us why we should hire you? <br/>
               <textarea name="question" placeholder="Make it good!" maxlength='300' required />
             </label>
-          </div>
+          </div> */}
            {/* RESUME UPLOAD  */}
-          <div className={crSty.formGroup}>
+          {/* <div className={crSty.formGroup}>
             <label for="resume">
               Upload your resume <br/>
               <input type="file" name="resume" />
             </label>
-          </div>       
+          </div>        */}
       </form>
       <div style={{textAlign:'center'}}>
       <button type='submit' value="Submit">Submit Application</button>
