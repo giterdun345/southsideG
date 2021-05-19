@@ -26,7 +26,7 @@ const ContentServices = () => {
               <div className={ldSty.cardDeatails}>
                 <h4>Interior Painting</h4>
                 <p>
-                  Having contractors doing work in your home can be disruptive. We make a remodel a pleaseant experience with consistency and communication.
+                  Having contractors doing work in your home can be disruptive. We make a remodel a pleasant experience with consistency and communication.
                 </p>
                 <Link to="/contact">Book Now</Link>
               </div>
@@ -158,7 +158,7 @@ const ContentServices = () => {
             <div className={ldSty.cardDeatails}>
               <h4>Gel Staining</h4>
               <p>
-                Do you want to refinish your kitchen cabinets, or some old dresser without spending having to strip and sand off the old finish? We got you covered either way. &nbsp;  </p>
+                Do you want to refinish your kitchen cabinets, or some old dresser without having to strip and sand off the old finish? We got you covered either way. &nbsp;  </p>
               <Link to="/contact">Book Now</Link>
             </div>
           </div>

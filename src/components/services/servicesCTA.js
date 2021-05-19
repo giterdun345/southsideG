@@ -17,7 +17,7 @@ const ServicesCTA = () => {
           </p>
         </div>
         <div className={svSty.ctaContactButtons}>
-        <a href='tel:904-524-8784' ><button style={{display:'flex', alignItems:'center'}}><FiPhoneCall/>&nbsp; Call Us at 904-555-5555</button></a>
+        <a href='tel:904-524-8784' ><button style={{display:'flex', alignItems:'center'}}><FiPhoneCall/>&nbsp; Call Us at 904-524-8784</button></a>
          <br/>
         <Link to='/contact' ><button style={{display:'flex', alignContent:'center'}}><RiMailSendLine/>&nbsp; Send a message</button></Link>
         </div>
