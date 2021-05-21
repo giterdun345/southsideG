@@ -6,7 +6,6 @@ const CareerForm = () => {
   return ( 
     <div className={crSty.formContainer}>
       <h2>Submit an Application</h2>
-      {/* <form action="https://formspree.io/f/meqvavop" method="POST" > */}
       <form name="applicationV2" method="POST" data-netlify="true" onSubmit="submit">
         <input type="hidden" name="form-name" value="applicationV2" />
             {/* FULL NAME  */}
