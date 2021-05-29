@@ -1,105 +1,120 @@
-<!-- AUTO-GENERATED-CONTENT:START (STARTER) -->
+# Guidance Counsellor's Communication Logs
+<!-- PROJECT SHIELDS -->
+<!--
+*** I'm using markdown "reference style" links for readability.
+*** Reference links are enclosed in brackets [ ] instead of parentheses ( ).
+*** See the bottom of this document for the declaration of the reference variables
+*** for contributors-url, forks-url, etc. This is an optional, concise syntax you may use.
+*** https://www.markdownguide.org/basic-syntax/#reference-style-links
+-->
+[![Issues][issues-shield]][issues-url]
+[![MIT License][license-shield]][license-url]
+[![LinkedIn][linkedin-shield]][linkedin-url]
+
+
+
+<!-- PROJECT LOGO -->
+<!-- ![admin demo](client/src/components/images/heart.jpg) -->
+<br />
 <p align="center">
-  <a href="https://www.gatsbyjs.com">
-    <img alt="Gatsby" src="https://www.gatsbyjs.com/Gatsby-Monogram.svg" width="60" />
-  </a>
+  <img src="client/src/components/images/heart.jpg" alt="Logo"> 
+  <h3 align="center">School Counsellor's Communication Logs</h3>
+  <p align="center">
+    During the pandemic, school counselors needed to keep track of their students, communication and stats. I volunteered to create an app for the counselors at the Ministry of Education. I created a CRUD application, with non-tech-savvy users in mind, simple UX, no risk for inaccurate data and no bloat. There is a user area for keeping track of individual communication logs and an admin area, where the lead counselor has access to all of the user's communication logs. Not only does the admin have full access but there is an analytics dashboard for all users and a dashboard that breaks down the stats of each user. The counselors have continued to use the app throughout the 2020-2021 school year and an inquiry for adding additional departments has been made. I had scaling in mind which could easily be expanded for speech therapists, occupational therapists, educational psychologists and administration.
+    <br />
+<!--     <a href="https://github.com/giterdun345/guidance_counsellors"><strong>Explore the docs »</strong></a> -->
+<!--     <br /> -->
+    <br />
+    <a href="https://comlogs-demo.netlify.app">View Demo</a>
+    ·
+    <a href="https://github.com/giterdun345/guidance_counsellors/issues">Report Bug</a>
+    ·
+    <a href="https://github.com/giterdun345/guidance_counsellors/issues">Request Feature</a>
+  </p>
 </p>
-<h1 align="center">
-  Gatsby's default starter
-</h1>
 
-Kick off your project with this default boilerplate. This starter ships with the main Gatsby configuration files you might need to get up and running blazing fast with the blazing fast app generator for React.
+<!-- TABLE OF CONTENTS -->
+<details open="open">
+  <summary><h2 style="display: inline-block">Table of Contents</h2></summary>
+  <ol>
+    <li>
+      <a href="#about-the-project">About The Project</a>
+      <ul>
+        <li><a href="#built-with">Built With</a></li>
+      </ul>
+    </li>
+    <li>
+      <a href="#getting-started">Usage</a>
+    </li>
+    <li><a href="#contributing">Contributing</a></li>
+    <li><a href="#license">License</a></li>
+    <li><a href="#contact">Contact</a></li>
+  </ol>
+</details>
 
-_Have another more specific idea? You may want to check out our vibrant collection of [official and community-created starters](https://www.gatsbyjs.com/docs/gatsby-starters/)._
 
-## 🚀 Quick start
 
-1.  **Create a Gatsby site.**
+<!-- ABOUT THE PROJECT -->
+## About The Project
+This is a CRUD application with JWT authorization and an analytics dashboard for easy referencing of stats. Think of it as a to do app on steroids. 
+On the backend, express.js is used with PostgreSQL for acquiring the data and JWT for authorization. I particularly prefer PostgreSQL and JWT over others because it is what I started learning with and is used by a majority of developers. So researching a particular idea is quick and easy. I also kept in mind scaling for the app to be used with other departments within the Ministry of Education.
+On the frontend, I stuck with React, which is my go to for any web development. I often use Sass but, to get a quicker deployment, I went with Bootstrap. This came in handy particularly when it came to the tables and pagination. I found a library called e-charts which has some great visualizations. It was hard to find resources, especially in English, but it is relatively straight foward and have a load of great examples in their gallery. React Toastify was another library to try, it is simple and easy to use to allow alert messages to pop up for logging in and out. In all of my projects, I try to use one library that I have not used before to get a better understanding of how to work with different libraries and if I like using it, I always have a resource to handy. 
 
-    Use the Gatsby CLI to create a new site, specifying the default starter.
+### Built With
 
-    ```shell
-    # create a new Gatsby site using the default starter
-    gatsby new my-default-starter https://github.com/gatsbyjs/gatsby-starter-default
-    ```
+* React-Bootstrap
+* E-Charts
+* React Toastify
+* Express.js
+* BCrypt
+* JSON Web Token
+* PostgreSQL
+* Heroku 
 
-1.  **Start developing.**
+<!-- USAGE EXAMPLES -->
+## Usage
+#User
+The user dashboard is straight forward and is designed to mininize bad data input. The visualizations on the admin page depend on accurate data and it is key to keep the analytics running smoothly. Below the input section, a table is shown with options for pagination, searching records and editing or deleting each observation. Clicking on the row will also bring up the notes associated to that observation, hidden to keep the table visually minimized. All elementary and middle school students do not have a student ID. Therefore, on request, the names of the students are also allowed as input as the student ID and hashed for security. Many automations were loaded into the input table to reduce the number of clicks needed to input a communication log. For example, the schools, date and year/group have default values based on the user's name. The search option allows you to look up past records by date or student ID. Pagination allows you to display as little as 5 observations to displaying all of the visualizations. A user can use the search option to divide all of their communications by week, month, and day.
 
-    Navigate into your new site’s directory and start it up.
+## Admin
+The admin dashboard begins with an initial dashboard displaying the statistics for all of the counselors combined. The amount "Engaged" is based on the amount of students that the counsellor's have interacted with based on the total public school population. The amount "Engaged" was requested for each counselor but I thought having a bigger picture would benefit the lead school counselor, especially when comparing the monthly engagement. The total number of logs and public school population was also provided in a quick metric. The production version also adds a metric to show the percentge of students engaged by gender. The visualization for school output is based on an observation falling under a defined criteria. Learning the output of the schools and individual counsellors was the driving force for the creation of this application. The administration wanted to know how much output was seen each month from each counselor. Schools in Cayman have a varying population in each school ranging from 15 total students to 2,000. It was important to provide a metric for student engagement to provide a relative metric based on school population. For a quick glance, a card is available showing those two metrics for each individual counselor, engagement (how many students relative to the population were contacted) as well as output (how many observations fell under the key criteria given). The card moves to the left and the right, by request to help the lead counsellor distinguish who has been counted. A link is given in the card as well as a list of counsellors in the sidenav bar to enter the page with the individual counsellor's statistics. The bar chart shows what the counselor has done during the current month and is broken down into each component. The sunburst chart allows the lead counsellor 
+to review the whole year's stats. It was an efficent and informative visualization that provided, yearly and monthly values for every observation by school. It should be noted that many of the counsellors on island work at multiple schools. Lastly, the referral, continuation and discharge values were displayed upon request.
+ 
+<!-- CONTRIBUTING -->
+## Contributing
 
-    ```shell
-    cd my-default-starter/
-    gatsby develop
-    ```
+Contributions are what make the open source community such an amazing place to be learn, 
+inspire, and create. Any contributions you make are **greatly appreciated**. Also you are welcome to use and adapt this as needed.
 
-1.  **Open the source code and start editing!**
+1. Fork the Project
+2. Create your Feature Branch (`git checkout -b feature/updatedFeature`)
+3. Commit your Changes (`git commit -m 'Add some updatedFeature'`)
+4. Push to the Branch (`git push origin feature/updatedFeature`)
+5. Open a Pull Request
 
-    Your site is now running at `http://localhost:8000`!
+<!-- LICENSE -->
+## License
 
-    _Note: You'll also see a second link: _`http://localhost:8000/___graphql`_. This is a tool you can use to experiment with querying your data. Learn more about using this tool in the [Gatsby tutorial](https://www.gatsbyjs.com/tutorial/part-five/#introducing-graphiql)._
+See `LICENSE` for more information.
 
-    Open the `my-default-starter` directory in your code editor of choice and edit `src/pages/index.js`. Save your changes and the browser will update in real time!
 
-## 🚀 Quick start (Gatsby Cloud)
+<!-- CONTACT -->
+## Contact
 
-Deploy this starter with one click on [Gatsby Cloud](https://www.gatsbyjs.com/cloud/):
+John Ketterer - email: johnmketterer@gmail.com
 
-[<img src="https://www.gatsbyjs.com/deploynow.svg" alt="Deploy to Gatsby Cloud">](https://www.gatsbyjs.com/dashboard/deploynow?url=https://github.com/gatsbyjs/gatsby-starter-default)
+Project Demo: [https://comlogs-demo.netlify.app](https://comlogs-demo.netlify.app)
 
-## 🧐 What's inside?
+Project Link: [https://github.com/giterdun345/guidance_counsellors](https://github.com/giterdun345/guidance_counsellors)
 
-A quick look at the top-level files and directories you'll see in a Gatsby project.
+<!-- MARKDOWN LINKS & IMAGES -->
+<!-- https://www.markdownguide.org/basic-syntax/#reference-style-links -->
+[issues-shield]: https://img.shields.io/github/issues/giterdun345/guidance_counsellors.svg?style=for-the-badge
+[issues-url]: https://github.com/giterdun345/guidance_counsellors/issues
+[license-shield]: https://img.shields.io/github/license/giterdun345/guidance_counsellors.svg?style=for-the-badge
+[license-url]: https://github.com/giterdun345/guidance_counsellors/blob/master/LICENSE.txt
+[linkedin-shield]: https://img.shields.io/badge/-LinkedIn-black.svg?style=for-the-badge&logo=linkedin&colorB=555
+[linkedin-url]: https://linkedin.com/in/jm-ketterer
 
-    .
-    ├── node_modules
-    ├── src
-    ├── .gitignore
-    ├── .prettierrc
-    ├── gatsby-browser.js
-    ├── gatsby-config.js
-    ├── gatsby-node.js
-    ├── gatsby-ssr.js
-    ├── LICENSE
-    ├── package-lock.json
-    ├── package.json
-    └── README.md
 
-1.  **`/node_modules`**: This directory contains all of the modules of code that your project depends on (npm packages) are automatically installed.
 
-2.  **`/src`**: This directory will contain all of the code related to what you will see on the front-end of your site (what you see in the browser) such as your site header or a page template. `src` is a convention for “source code”.
-
-3.  **`.gitignore`**: This file tells git which files it should not track / not maintain a version history for.
-
-4.  **`.prettierrc`**: This is a configuration file for [Prettier](https://prettier.io/). Prettier is a tool to help keep the formatting of your code consistent.
-
-5.  **`gatsby-browser.js`**: This file is where Gatsby expects to find any usage of the [Gatsby browser APIs](https://www.gatsbyjs.com/docs/browser-apis/) (if any). These allow customization/extension of default Gatsby settings affecting the browser.
-
-6.  **`gatsby-config.js`**: This is the main configuration file for a Gatsby site. This is where you can specify information about your site (metadata) like the site title and description, which Gatsby plugins you’d like to include, etc. (Check out the [config docs](https://www.gatsbyjs.com/docs/gatsby-config/) for more detail).
-
-7.  **`gatsby-node.js`**: This file is where Gatsby expects to find any usage of the [Gatsby Node APIs](https://www.gatsbyjs.com/docs/node-apis/) (if any). These allow customization/extension of default Gatsby settings affecting pieces of the site build process.
-
-8.  **`gatsby-ssr.js`**: This file is where Gatsby expects to find any usage of the [Gatsby server-side rendering APIs](https://www.gatsbyjs.com/docs/ssr-apis/) (if any). These allow customization of default Gatsby settings affecting server-side rendering.
-
-9.  **`LICENSE`**: This Gatsby starter is licensed under the 0BSD license. This means that you can see this file as a placeholder and replace it with your own license.
-
-10. **`package-lock.json`** (See `package.json` below, first). This is an automatically generated file based on the exact versions of your npm dependencies that were installed for your project. **(You won’t change this file directly).**
-
-11. **`package.json`**: A manifest file for Node.js projects, which includes things like metadata (the project’s name, author, etc). This manifest is how npm knows which packages to install for your project.
-
-12. **`README.md`**: A text file containing useful reference information about your project.
-
-## 🎓 Learning Gatsby
-
-Looking for more guidance? Full documentation for Gatsby lives [on the website](https://www.gatsbyjs.com/). Here are some places to start:
-
-- **For most developers, we recommend starting with our [in-depth tutorial for creating a site with Gatsby](https://www.gatsbyjs.com/tutorial/).** It starts with zero assumptions about your level of ability and walks through every step of the process.
-
-- **To dive straight into code samples, head [to our documentation](https://www.gatsbyjs.com/docs/).** In particular, check out the _Guides_, _API Reference_, and _Advanced Tutorials_ sections in the sidebar.
-
-## 💫 Deploy
-
-[Build, Deploy, and Host On The Only Cloud Built For Gatsby](https://www.gatsbyjs.com/cloud/)
-
-Gatsby Cloud is an end-to-end cloud platform specifically built for the Gatsby framework that combines a modern developer experience with an optimized, global edge network.
-
-<!-- AUTO-GENERATED-CONTENT:END -->
