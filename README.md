@@ -1,4 +1,4 @@
-# Guidance Counsellor's Communication Logs
+# Southside Paint & More
 <!-- PROJECT SHIELDS -->
 <!--
 *** I'm using markdown "reference style" links for readability.
