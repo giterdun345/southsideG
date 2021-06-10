@@ -1,6 +1,6 @@
 {
   "name": "Southside-Paint-Plus-More",
-  "private": true,
+  "private": false,
   "version": "0.1.0",
   "description": "Offering Commercial and Residential painting services as well as an array of related jobs with competitive prices and satisfication guaranteed!",
   "author": "John Ketterer <johnmketterer@gmail.com>",
