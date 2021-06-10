@@ -1,105 +1,104 @@
-<!-- AUTO-GENERATED-CONTENT:START (STARTER) -->
+# Southside Paint & More
+<!-- PROJECT SHIELDS -->
+<!--
+*** I'm using markdown "reference style" links for readability.
+*** Reference links are enclosed in brackets [ ] instead of parentheses ( ).
+*** See the bottom of this document for the declaration of the reference variables
+*** for contributors-url, forks-url, etc. This is an optional, concise syntax you may use.
+*** https://www.markdownguide.org/basic-syntax/#reference-style-links
+-->
+[![Issues][issues-shield]][issues-url]
+[![MIT License][license-shield]][license-url]
+[![LinkedIn][linkedin-shield]][linkedin-url]
+
+
+
+<!-- PROJECT LOGO -->
+<!-- ![admin demo](client/src/components/images/heart.jpg) -->
+<br />
 <p align="center">
-  <a href="https://www.gatsbyjs.com">
-    <img alt="Gatsby" src="https://www.gatsbyjs.com/Gatsby-Monogram.svg" width="60" />
-  </a>
+<!--   <img src="client/src/components/images/heart.jpg" alt="Logo">  -->
+  <h3 align="center">Southside Paint & More</h3>
+  <p align="center">
+    Southside Paint + More is a painting company serving the Jacksonville area. Their original web page was slow and being in the top 15 painting companies in the area, needed a professional look. Furthermore the owner was paying $150/month for all the bells and whistles of dedicated hosting without requiring the extensive resources. I created an SEO friendly page, optimized for speed despite the image gallery and also added a job application form to add a database for potential employees, in addition to a contact database for clients. The image gallery uses Cloudinary and is linked with Facebook to make managing a breeze. The website is also ready for articles/blog/markdown portion, when they are ready, making it a full JAMstack. It saved almost 80% on cost and the owner was pleased with the outcome. Here is a demo version, that lives at Netlify.
+    <br />
+    <a href="https://southsidepaint-prototype.netlify.app/">View Demo</a>
+    ·
+    <a href="https://github.com/giterdun345/southsideG/issues">Report Bug</a>
+    ·
+    <a href="https://github.com/giterdun345/southsideG/issues">Request Feature</a>
+  </p>
 </p>
-<h1 align="center">
-  Gatsby's default starter
-</h1>
 
-Kick off your project with this default boilerplate. This starter ships with the main Gatsby configuration files you might need to get up and running blazing fast with the blazing fast app generator for React.
+<!-- TABLE OF CONTENTS -->
+<details open="open">
+  <summary><h2 style="display: inline-block">Table of Contents</h2></summary>
+  <ol>
+    <li>
+      <a href="#about-the-project">About The Project</a>
+      <ul>
+        <li><a href="#built-with">Built With</a></li>
+      </ul>
+    </li>
+    <li><a href="#contributing">Contributing</a></li>
+    <li><a href="#license">License</a></li>
+    <li><a href="#contact">Contact</a></li>
+  </ol>
+</details>
 
-_Have another more specific idea? You may want to check out our vibrant collection of [official and community-created starters](https://www.gatsbyjs.com/docs/gatsby-starters/)._
 
-## 🚀 Quick start
 
-1.  **Create a Gatsby site.**
+<!-- ABOUT THE PROJECT -->
+## About The Project
+This is a website created for a small - medium sized business to improve their original page with responsiveness, performance, accessibility and SEO. The page features all of the services provided with links for soon to come articles aiding the SEO ranking. It has a gallery connected to Cloudinary which also linked to their business' Facebook. It allows for easy management of work photos and takes only a few clicks to display the desired images. They are always looking for employees so I added an application form, through Netlify, which keeps the submitted forms and can be used as a database for potential employees. We spoke about implementing a blog and once they find a content writer, the blog and articles can be easily managed. I used Gatsby for the consideration of a future blog but mainly for image optimization. The plugins offer are great when it comes to performance. I was able to decrease the FCP by 2.4 seconds, decrease the overall cost by of the website 80% and improve their future ranking in search engines. I learned a lot about the JAM stack and how to utilize all of the Gatsby features. Server side rendering was a new concept but I would now consider Gatsby for all of my static sites after getting past the fundamentals of it.
 
-    Use the Gatsby CLI to create a new site, specifying the default starter.
+### Built With
 
-    ```shell
-    # create a new Gatsby site using the default starter
-    gatsby new my-default-starter https://github.com/gatsbyjs/gatsby-starter-default
-    ```
+* React
+* Sass
+* React-Helmet
+* Hamburger-React
+* React-Lightbox
+* Gatsby
+* Cloudinary
+* Netlify
+* DNS Management
 
-1.  **Start developing.**
+<!-- CONTRIBUTING -->
+## Contributing
 
-    Navigate into your new site’s directory and start it up.
+Contributions are what make the open source community such an amazing place to learn, 
+inspire, and create. Any contributions you make are **greatly appreciated**. Also you are welcome to use and adapt this as needed.
 
-    ```shell
-    cd my-default-starter/
-    gatsby develop
-    ```
+1. Fork the Project
+2. Create your Feature Branch (`git checkout -b feature/updatedFeature`)
+3. Commit your Changes (`git commit -m 'Add some updatedFeature'`)
+4. Push to the Branch (`git push origin feature/updatedFeature`)
+5. Open a Pull Request
 
-1.  **Open the source code and start editing!**
+<!-- LICENSE -->
+## License
 
-    Your site is now running at `http://localhost:8000`!
+See `LICENSE` for more information.
 
-    _Note: You'll also see a second link: _`http://localhost:8000/___graphql`_. This is a tool you can use to experiment with querying your data. Learn more about using this tool in the [Gatsby tutorial](https://www.gatsbyjs.com/tutorial/part-five/#introducing-graphiql)._
 
-    Open the `my-default-starter` directory in your code editor of choice and edit `src/pages/index.js`. Save your changes and the browser will update in real time!
+<!-- CONTACT -->
+## Contact
 
-## 🚀 Quick start (Gatsby Cloud)
+John Ketterer - email: johnmketterer@gmail.com
 
-Deploy this starter with one click on [Gatsby Cloud](https://www.gatsbyjs.com/cloud/):
+Project Demo: [https://southsidepaint-prototype.netlify.app/](https://comlogs-demo.netlify.app)
 
-[<img src="https://www.gatsbyjs.com/deploynow.svg" alt="Deploy to Gatsby Cloud">](https://www.gatsbyjs.com/dashboard/deploynow?url=https://github.com/gatsbyjs/gatsby-starter-default)
+Project Link: [https://github.com/giterdun345/southsideG](https://github.com/giterdun345/guidance_counsellors)
 
-## 🧐 What's inside?
+<!-- MARKDOWN LINKS & IMAGES -->
+<!-- https://www.markdownguide.org/basic-syntax/#reference-style-links -->
+[issues-shield]: https://img.shields.io/github/issues/giterdun345/guidance_counsellors.svg?style=for-the-badge
+[issues-url]: https://github.com/giterdun345/guidance_counsellors/issues
+[license-shield]: https://img.shields.io/github/license/giterdun345/guidance_counsellors.svg?style=for-the-badge
+[license-url]: https://github.com/giterdun345/guidance_counsellors/blob/master/LICENSE.txt
+[linkedin-shield]: https://img.shields.io/badge/-LinkedIn-black.svg?style=for-the-badge&logo=linkedin&colorB=555
+[linkedin-url]: https://linkedin.com/in/jm-ketterer
 
-A quick look at the top-level files and directories you'll see in a Gatsby project.
 
-    .
-    ├── node_modules
-    ├── src
-    ├── .gitignore
-    ├── .prettierrc
-    ├── gatsby-browser.js
-    ├── gatsby-config.js
-    ├── gatsby-node.js
-    ├── gatsby-ssr.js
-    ├── LICENSE
-    ├── package-lock.json
-    ├── package.json
-    └── README.md
 
-1.  **`/node_modules`**: This directory contains all of the modules of code that your project depends on (npm packages) are automatically installed.
-
-2.  **`/src`**: This directory will contain all of the code related to what you will see on the front-end of your site (what you see in the browser) such as your site header or a page template. `src` is a convention for “source code”.
-
-3.  **`.gitignore`**: This file tells git which files it should not track / not maintain a version history for.
-
-4.  **`.prettierrc`**: This is a configuration file for [Prettier](https://prettier.io/). Prettier is a tool to help keep the formatting of your code consistent.
-
-5.  **`gatsby-browser.js`**: This file is where Gatsby expects to find any usage of the [Gatsby browser APIs](https://www.gatsbyjs.com/docs/browser-apis/) (if any). These allow customization/extension of default Gatsby settings affecting the browser.
-
-6.  **`gatsby-config.js`**: This is the main configuration file for a Gatsby site. This is where you can specify information about your site (metadata) like the site title and description, which Gatsby plugins you’d like to include, etc. (Check out the [config docs](https://www.gatsbyjs.com/docs/gatsby-config/) for more detail).
-
-7.  **`gatsby-node.js`**: This file is where Gatsby expects to find any usage of the [Gatsby Node APIs](https://www.gatsbyjs.com/docs/node-apis/) (if any). These allow customization/extension of default Gatsby settings affecting pieces of the site build process.
-
-8.  **`gatsby-ssr.js`**: This file is where Gatsby expects to find any usage of the [Gatsby server-side rendering APIs](https://www.gatsbyjs.com/docs/ssr-apis/) (if any). These allow customization of default Gatsby settings affecting server-side rendering.
-
-9.  **`LICENSE`**: This Gatsby starter is licensed under the 0BSD license. This means that you can see this file as a placeholder and replace it with your own license.
-
-10. **`package-lock.json`** (See `package.json` below, first). This is an automatically generated file based on the exact versions of your npm dependencies that were installed for your project. **(You won’t change this file directly).**
-
-11. **`package.json`**: A manifest file for Node.js projects, which includes things like metadata (the project’s name, author, etc). This manifest is how npm knows which packages to install for your project.
-
-12. **`README.md`**: A text file containing useful reference information about your project.
-
-## 🎓 Learning Gatsby
-
-Looking for more guidance? Full documentation for Gatsby lives [on the website](https://www.gatsbyjs.com/). Here are some places to start:
-
-- **For most developers, we recommend starting with our [in-depth tutorial for creating a site with Gatsby](https://www.gatsbyjs.com/tutorial/).** It starts with zero assumptions about your level of ability and walks through every step of the process.
-
-- **To dive straight into code samples, head [to our documentation](https://www.gatsbyjs.com/docs/).** In particular, check out the _Guides_, _API Reference_, and _Advanced Tutorials_ sections in the sidebar.
-
-## 💫 Deploy
-
-[Build, Deploy, and Host On The Only Cloud Built For Gatsby](https://www.gatsbyjs.com/cloud/)
-
-Gatsby Cloud is an end-to-end cloud platform specifically built for the Gatsby framework that combines a modern developer experience with an optimized, global edge network.
-
-<!-- AUTO-GENERATED-CONTENT:END -->
